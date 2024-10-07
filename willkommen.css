@@ -1,0 +1,51 @@
+/* Styling */
+nav ul {
+     justify-content:center;
+ display: flex;
+}
+nav li {
+list-style: none;
+display: block;
+margin-left: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+
+
+
+
+/* Pos/size IPad */
+@media screen and (max-width: 1640px) { 
+
+nav {
+    color: pink;
+}
+
+
+
+
+
+
+
+}
+
+/* Pos/size PC */ 
+@media screen and (min-width: 1640px) { 
+
+nav {
+    color: forestgreen;
+}
+
+
+
+
+
+
+
+
+
+}
