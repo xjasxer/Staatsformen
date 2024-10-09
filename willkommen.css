@@ -1,45 +1,67 @@
 /* Styling */
+body {
+    height: 100%;
+}
+.picture {
+    background-image: url(src/img/slideshow/exampel.jpg);
+}
+nav {
+    transform: translate(0,-370px);
+}
 nav ul {
-     justify-content:center;
+justify-content:center;
  display: flex;
+ padding-top: 5px;
 }
 nav li {
 list-style: none;
 display: block;
 margin-left: 10px;
+background-color: rgba(128, 128, 128, 0.774);
+padding: 6px;
+border-radius: 19px;
 }
 nav a {
     text-decoration: none;
     color: black;
     display: block;
 }
-
-
-
-
-
 /* Pos/size IPad */
 @media screen and (max-width: 1640px) { 
-
-nav {
+/* Checker */
+.checker {
     color: pink;
 }
-
-
-
-
-
-
-
+/* Checker*/ 
+nav a {
+    color: rgb(255, 255, 255);
 }
-
+.picture {
+    width: 101.6%;
+    height: 360px;
+    transform: translate(-9px,-20px);
+    background-repeat: no-repeat;
+    background-position-y: -2100px;
+}
+}
 /* Pos/size PC */ 
 @media screen and (min-width: 1640px) { 
-
-nav {
-    color: forestgreen;
+/* Checker */
+.checker {
+    color: rgb(255, 0, 0);
 }
-
+/* Checker*/ 
+nav a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.picture {
+    width: 100.82%;
+    height: 390px;
+    transform: translate(-7.9px,-20px);
+    background-repeat: no-repeat;
+    background-position-y: -2100px;
+}
 
 
 
