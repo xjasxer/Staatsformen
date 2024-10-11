@@ -1,4 +1,12 @@
 /* Styling */
+
+/* Var */
+.center {
+    text-align: center;
+}
+/* ----- */
+
+
 body {
     height: 100%;
 }
@@ -26,6 +34,14 @@ nav a {
     color: black;
     display: block;
 }
+#title {
+color: white;
+
+}
+#unterschrift {
+color: white;
+}
+
 /* Pos/size IPad */
 @media screen and (max-width: 1640px) { 
 /* Checker */
@@ -47,6 +63,15 @@ nav a {
     background-position-y: -500px;
     background-size: cover;
 }
+#title {
+    font-size: 38px;
+    margin-bottom: -7px;
+    margin-top: 50px;
+
+    }
+#unterschrift {
+   font-size: 20px;
+    }    
 }
 /* Pos/size PC */ 
 @media screen and (min-width: 1640px) { 
@@ -55,6 +80,9 @@ nav a {
     color: rgb(255, 0, 0);
 }
 /* Checker*/ 
+nav {
+    transform: translate(0,-350px);
+}
 nav a {
     color: rgb(255, 255, 255);
     font-size: 18px;
@@ -64,7 +92,17 @@ nav a {
     height: 390px;
     transform: translate(-7.9px,-20px);
     background-repeat: no-repeat;
-    background-position-y: -2100px;
+    background-position-y: -3000px;
+    background-position-x: -4500px;
+}
+#title {
+    font-size: 50px;
+    margin-bottom: -7px;
+    margin-top: 50px;
+    }
+#unterschrift {
+   font-size: 22px;
+    }    
 }
 
 
@@ -73,5 +111,3 @@ nav a {
 
 
 
-
-}
