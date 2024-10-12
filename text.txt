@@ -1,0 +1,17 @@
+
+</div>
+
+
+
+
+<input type="checkbox" id="1" name="1" value="1">
+<label for="1">Monarchie</label><br>
+
+<input type="checkbox" id="2" name="2" value="2">
+  <label for="2">Republik</label> <br>
+  
+  <input type="checkbox" id="3" name="3" value="3">
+  <label for="3">Diktatur</label> <br>
+
+
+</div>

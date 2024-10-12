@@ -1,0 +1,96 @@
+html {
+    width: 100%;
+    overflow: hidden;
+}
+body {
+   
+    background-color:  #ace1f3 ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+   input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    -webkit-appearance: none; 
+    appearance: none;
+    background-color: grey;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle; 
+    position: relative;
+}
+input[type="checkbox"]::before {
+    content: ''; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: transparent;  }
+
+
+#mo:checked {
+    background-color: #af0000;
+   
+}
+#re:checked {
+    background-color: #0e35a0; 
+ 
+}
+#dik:checked {
+    background-color: #08bd08; 
+   
+}
+
+
+input[type="checkbox"]:checked::before {
+    content: '✔'; 
+    color: white; 
+    font-size: 16px;
+}
+
+
+
+
+
+/* PC */
+@media screen and (min-width: 1640px) { 
+body {
+    background-size: 100%;
+    background-image: url(/src/img/weltkarte.jpg);
+}
+#nav-karte {
+    width: 280px;
+    float: right;
+    margin-right: 10px; 
+    }
+    
+
+}
+
+
+
+
+
+
+
+/* IPad */
+@media screen and (max-width: 1640px) { 
+    body {
+        background-size: 100%;
+        background-image: url(/src/img/weltkarte_ipad.jpg);
+    }
+    #nav-karte {
+        width: 280px;
+        float: left;
+        margin-left: 15px; 
+        margin-top: 500px;
+        }
+        
+
+
+}
