@@ -31,6 +31,25 @@
 
 </div>
 
+<div id="nav-infos">
+  
+<h4>Informationen über die Stattsformen</h4>
+
+<input type="button" value="Monarchie">
+<input type="button" value="Republik">
+<input type="button" value="Diktatur">
+
+</div>
+
+
+
+<?php 
+
+
+
+?>
+
+
 
 
 </body>
