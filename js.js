@@ -31,7 +31,7 @@ document.getElementById('info').style.display = "block";
 
 var checkboxes = document.getElementsByClassName("checkbox");
 for (var i = 0; i < checkboxes.length; i++) {
-  checkboxes[i].addEventListener("change", checkbox());
+  checkboxes[i].addEventListener("change", checkbox);
 }
 
 
@@ -42,6 +42,24 @@ var c = document.getElementById('dik');
 
 
 if (a.checked) {
+  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+}
+if (b.checked) {
+  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+}
+if (c.checked) {
+  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+}
+if (a.checked && b.checked) {
+  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+} 
+if (a.checked && c.checked) {
+  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+}
+if (b.checked && c.checked) {
+  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+}
+if (a.checked && b.checked && c.checked) {
   document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
 }
  }

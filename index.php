@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Die Staatsformen</title>
     <link rel="stylesheet" href="style.css">
-    <script src="js.js"></script>
 </head>
 <body>
     
@@ -71,6 +70,6 @@ data-title="Diktatur"
 </div>
 
 
-
+<script src="js.js"></script>
 </body>
 </html>
