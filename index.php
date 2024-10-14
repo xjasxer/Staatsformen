@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Die Herrschaftsformen</title>
+    <title>Die Staatsformen</title>
     <link rel="stylesheet" href="style.css">
     <script src="js.js"></script>
 </head>
@@ -20,12 +20,19 @@
  id="info1"
  onclick="info1()">
 
+<input type="button" value="Republik"
+data-title="Republik"
+ data-beschreibung="hduhuehudheudh"
+ data-beschreibung2="duhduhu"
+ id="info2"
+ onclick="info2()">
 
-
-
-
-<input type="button" value="Republik">
-<input type="button" value="Diktatur">
+<input type="button" value="Diktatur"
+data-title="Diktatur"
+ data-beschreibung="sssss"
+ data-beschreibung2="huhuhuhuhu"
+ id="info3"
+ onclick="info3()">
 
 </div>
 
@@ -34,6 +41,7 @@
   <h1 class="center"  id="info-header">hh</h1>
   <p class="center" id="info-beschreibung">z</p>
   <p class="center" id="info-beschreibung2">z</p>
+  <p id="copyright">icon:Flaticon.com</p>
 </div>
 
 
@@ -41,26 +49,26 @@
 
 <div id="nav-karte">
 
-<h5>Was möchtest du angezeigt bekommen?</h4>
+<h2>Karteneinstellungen</h2>
 
-<div id="nav-formen">
+<div id="nav-formen" >
 <h4>Staatsformen:</h5>
 
 
-<input type="checkbox" id="mo" name="1" value="1">
+<input type="checkbox" id="mo" name="1" value="1" cass="checkbox">   
 <label for="1">Monarchie</label><br>
 
-<input type="checkbox" id="re" name="2" value="2">
+<input type="checkbox" id="re" name="2" value="2" class="checkbox">
   <label for="2">Republik</label> <br>
   
-  <input type="checkbox" id="dik" name="3" value="3">
+  <input type="checkbox" id="dik" name="3" value="3" class="checkbox">
   <label for="3">Diktatur</label> <br>
 
 
 
 </div>
 
-
+</div>
 
 
 
