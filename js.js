@@ -29,8 +29,8 @@ document.getElementById('info').style.display = "block";
   }
 
 
-
-document.getElementsByClassName("checkbox").addEventListener("checked", checkbox())
+var checkbox = document.getElementsByClassName("checkbox")
+checkbox.addEventListener("change", checkbox())
   function checkbox() {
 var a = document.getElementById('mo')
 var b = document.getElementById('re')
@@ -38,6 +38,6 @@ var c = document.getElementById('dik')
 
 
 if (a.checked ) {
-  document.getElementsByName("Body").style.backroundage= url('')
+  document.body.style.backgroundImage = url('/src/img/aa.jpeg')
 }
  }
