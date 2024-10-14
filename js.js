@@ -29,8 +29,12 @@ document.getElementById('info').style.display = "block";
   }
 
 
-var checkbox = document.getElementsByClassName("checkbox")
-checkbox.addEventListener("change", checkbox())
+var checkboxes = document.getElementsByClassName("checkbox");
+for (var i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].addEventListener("change", checkbox());
+}
+
+
   function checkbox() {
 var a = document.getElementById('mo')
 var b = document.getElementById('re')

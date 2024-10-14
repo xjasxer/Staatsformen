@@ -55,7 +55,7 @@ data-title="Diktatur"
 <h4>Staatsformen:</h5>
 
 
-<input type="checkbox" id="mo" name="1" value="1" cass="checkbox">   
+<input type="checkbox" id="mo" name="1" value="1" class="checkbox">   
 <label for="1">Monarchie</label><br>
 
 <input type="checkbox" id="re" name="2" value="2" class="checkbox">
