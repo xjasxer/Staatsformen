@@ -30,9 +30,10 @@
 </div>
 
 <div id="info">
-  <h1 id="info-header">hh</h1>
-  <p id="info-beschreibung">z</p>
-  <p id="info-beschreibung2">z</p>
+ <img src="/src/icons/x.png" alt="Close" onclick="closeinfo()"> 
+  <h1 class="center"  id="info-header">hh</h1>
+  <p class="center" id="info-beschreibung">z</p>
+  <p class="center" id="info-beschreibung2">z</p>
 </div>
 
 

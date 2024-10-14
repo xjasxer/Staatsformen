@@ -1,3 +1,7 @@
+.center {
+    text-align: center;
+}
+
 html {
     width: 100%;
     overflow: hidden;
@@ -58,6 +62,8 @@ input[type="checkbox"]:checked::before {
     padding: 10px;
     margin-top: 10px;
     background-color: #f0f0f0;
+    z-index: 1;
+
 }
 
 
@@ -105,8 +111,18 @@ position: absolute;
 top: 570px;
 left: 550px;
 font-size: 20px;
-
     }
+    #info {
+        width: 600px;
+        height: 300px;
+        position: absolute;
+        left: 22%;
+        top: 20%;
+    }
+#info img {
+    height: 35px;
+    float: right;
 
+}
 
 }
