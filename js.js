@@ -36,12 +36,12 @@ for (var i = 0; i < checkboxes.length; i++) {
 
 
   function checkbox() {
-var a = document.getElementById('mo')
-var b = document.getElementById('re')
-var c = document.getElementById('dik')
+var a = document.getElementById('mo');
+var b = document.getElementById('re');
+var c = document.getElementById('dik');
 
 
-if (a.checked ) {
-  document.body.style.backgroundImage = url('/src/img/aa.jpeg')
+if (a.checked) {
+  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
 }
  }
