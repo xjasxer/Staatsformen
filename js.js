@@ -42,24 +42,28 @@ var c = document.getElementById('dik');
 
 
 if (a.checked) {
-  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+  document.body.style.backgroundImage = "url('/src/img/monarchie_ipad.png')";
 }
 if (b.checked) {
-  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+
 }
 if (c.checked) {
-  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+
 }
 if (a.checked && b.checked) {
-  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+
 } 
 if (a.checked && c.checked) {
-  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+
 }
 if (b.checked && c.checked) {
-  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+
 }
 if (a.checked && b.checked && c.checked) {
-  document.body.style.backgroundImage = "url(/src/img/aa.jpeg)";
+
+} 
+else {
+
+  document.body.style.backgroundImage = "url('/src/img/weltkarte_ipad.jpg')";
 }
  }
