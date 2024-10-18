@@ -43,7 +43,30 @@ data-title="Diktatur"
   <p id="copyright">icon:Flaticon.com</p>
 </div>
 
+<div id="einstellungen">
+  <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose()">
+<h1 class="center" >Einstellungen</h1>
+<h3 class="center">Stellen sie hier ein was bei "Zusatz" angezeigt werden soll</h3>
 
+<div id="einstellungenradio">
+<label>
+    <input type="radio" name="optionen" value="1" id="radio" > Teilautonome Republik
+</label><br>
+
+<label>
+    <input type="radio" name="optionen" value="2" id="radio"> Islamische Republik
+</label><br>
+
+<label>
+    <input type="radio" name="optionen" value="3" id="radio"> 	Föderale Republik
+</label><br>
+
+<label>
+    <input type="radio" name="optionen" value="4" id="radio"> Deutschland
+</label><br>
+</div>
+
+</div>
 
 
 <div id="nav-karte">
@@ -51,23 +74,20 @@ data-title="Diktatur"
 <h2>Karteneinstellungen</h2>
 
 <div id="nav-formen" >
-<h4>Staatsformen:</h5>
+<h4>Staatsformen:</h4>
 
 
 <input type="checkbox" id="mo" name="1" value="1" class="checkbox">   
 <label for="1">Monarchie</label><br>
 
 <input type="checkbox" id="re" name="2" value="2" class="checkbox">
-  <label for="2">Republik</label> <br>
+  <label for="2">Republik (alle Formen)</label> <br>
   
   <input type="checkbox" id="dik" name="3" value="3" class="checkbox">
-  <label for="3">Diktatur</label> <br>
+  <label for="3">Zusatz</label> <br>
 
+ <h5 id="einstellungentext" onclick="einstellungenopen()">  Weitere Einstellungen </h5>
 
-
-</div>
-
-</div>
 
 
 <script src="js.js"></script>

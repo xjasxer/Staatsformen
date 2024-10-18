@@ -40,30 +40,53 @@ var a = document.getElementById('mo');
 var b = document.getElementById('re');
 var c = document.getElementById('dik');
 
+if (!a.checked && !b.checked) {
+  document.body.style.backgroundImage = "url('/src/img/weltkarte_ipad.jpg')";
+  
+} else {
+
 
 if (a.checked) {
   document.body.style.backgroundImage = "url('/src/img/monarchie_ipad.png')";
 }
 if (b.checked) {
-
-}
-if (c.checked) {
+  document.body.style.backgroundImage = "url('/src/img/republik_ipad.png')";
 
 }
 if (a.checked && b.checked) {
+  document.body.style.backgroundImage = "url('/src/img/monarchie-republik_ipad.png')";
 
 } 
-if (a.checked && c.checked) {
 
+
+}} 
+
+function einstellungenopen() {
+  document.getElementById('einstellungen').style.display = 'block'
 }
-if (b.checked && c.checked) {
-
+function einstellungenclose() {
+  document.getElementById('einstellungen').style.display = 'none'
 }
-if (a.checked && b.checked && c.checked) {
 
-} 
-else {
-
-  document.body.style.backgroundImage = "url('/src/img/weltkarte_ipad.jpg')";
+var radios = document.getElementsByClassName("radio");
+for (var i = 0; i < checkboxes.length; i++) {
+  radios[i].addEventListener("change", radio);
 }
- }
+
+function radio() {
+  let selectedOption = document.querySelector('input[name="optionen"]:checked');
+            
+            if (selectedOption) {
+                let result = selectedOption.value;
+
+                if (result === "1") {
+
+                } else if (result === "2") {
+
+                } else if (result === "3") {
+
+                }
+            } else {
+                document.getElementById("result").innerText = "Bitte wähle eine Option.";
+            }
+}

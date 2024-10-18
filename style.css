@@ -68,7 +68,17 @@ border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(6px);
-
+}
+#einstellungen {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    z-index: 1;
+background: rgba(255, 255, 255, 0.40);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(6px);
 }
 #nav-infos input {
 border-radius: 10px;
@@ -83,7 +93,14 @@ font-size: 15px;
  transform: translate(-35px,0);
 font-family: Georgia, 'Times New Roman', Times, serif;
 }
+#einstellungentext {
+color: #0e35a0;
+    text-decoration-style: solid;
+    text-decoration: underline;
+font-size: 14px;
 
+
+}
 
 
 
@@ -149,5 +166,25 @@ font-size: 20px;
     left: 540px;
     font-size: 10px;
 }
- 
+ #einstellungen {
+    width: 600px;
+        height: 300px;
+        position: absolute;
+        left: 22%;
+        top: 20%;
+ }
+ #einstellungen img {
+    height: 35px;
+    float: right;
+ }
+ #einstellungen h1 {
+margin-left: 45px;
+ }
+ #einstellungen label {
+    font-size: 18px;
+ }
+ #einstellungenradio {
+    margin-top: 60px;
+margin-left: 200px;
+ }
 } 
