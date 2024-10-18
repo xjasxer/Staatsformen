@@ -75,7 +75,7 @@ data-title="Diktatur"
 
 <h2>Karteneinstellungen</h2>
 
-<div id="nav-formen" >
+<div id="nav-formen" >   
 <h4>Staatsformen:</h4>
 
 
@@ -85,7 +85,7 @@ data-title="Diktatur"
 <input type="radio" id="re" name="karte" value="2" class="checkbox">
   <label for="2">Republik (alle Formen)</label> <br>
   
-  <input type="radio" id="dik" name="karte" value="3" class="checkbox">
+  <input type="radio" id="zusatzcb" name="karte" value="3" class="checkbox">
   <label for="3" id="zusatzlabel">Zusatz</label> <br>
 
  <h5 id="einstellungentext" onclick="einstellungenopen()">  Weitere Einstellungen </h5>

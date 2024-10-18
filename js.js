@@ -38,14 +38,15 @@ for (var i = 0; i < checkboxes.length; i++) {
   function checkbox() {
 var a = document.getElementById('mo');
 var b = document.getElementById('re');
-var c = document.getElementById('dik');
+var c = document.getElementById('zusatzcb');
+var zusatz = document.querySelector('input[name="optionen"]:checked');
+var value = zusatz.value;
+            
 
 if (!a.checked && !b.checked) {
   document.body.style.backgroundImage = "url('/src/img/weltkarte_ipad.jpg')";
   
 } else {
-
-
 if (a.checked) {
   document.body.style.backgroundImage = "url('/src/img/monarchie_ipad.png')";
 }
@@ -56,10 +57,14 @@ if (b.checked) {
 if (a.checked && b.checked) {
   document.body.style.backgroundImage = "url('/src/img/monarchie-republik_ipad.png')";
 
-} 
+}
+ if (c.checked && value === "1") {
+document.body.style.color = "red"
+}
 
+            
 
-}} 
+}}
 
 function einstellungenopen() {
   document.getElementById('einstellungen').style.display = 'block'
@@ -73,18 +78,24 @@ function update() {
             
             if (selectedOption) {
                 let result = selectedOption.value;
-
+var set = 0
                 if (result === "1") {
 document.getElementById('zusatzlabel').textContent = "Teilautonome Republik"
+set = 1
                 } else if (result === "2") {
 document.getElementById('zusatzlabel').textContent = "Islamische Republik"
+set = 2
                 } else if (result === "3") {
 document.getElementById('zusatzlabel').textContent = "Föderale Republik"
+set = 3
                 }
                 else if (result === "4") {
 document.getElementById('zusatzlabel').textContent = "Deutschland"
+set = 4
                 }
             } else {
+document.getElementById('zusatzlabel').textContent = "Zusatz"
+set = 0
+}
 
-            }
 }
