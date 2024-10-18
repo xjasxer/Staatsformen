@@ -80,7 +80,7 @@ function radio() {
                 let result = selectedOption.value;
 
                 if (result === "1") {
-
+document.getElementById('zusatzlabel').textContent = "111"
                 } else if (result === "2") {
 
                 } else if (result === "3") {

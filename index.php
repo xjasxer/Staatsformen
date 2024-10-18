@@ -84,7 +84,7 @@ data-title="Diktatur"
   <label for="2">Republik (alle Formen)</label> <br>
   
   <input type="checkbox" id="dik" name="3" value="3" class="checkbox">
-  <label for="3">Zusatz</label> <br>
+  <label for="3" id="zusatzlabel">Zusatz</label> <br>
 
  <h5 id="einstellungentext" onclick="einstellungenopen()">  Weitere Einstellungen </h5>
 
