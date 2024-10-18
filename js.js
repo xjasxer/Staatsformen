@@ -68,25 +68,23 @@ function einstellungenclose() {
   document.getElementById('einstellungen').style.display = 'none'
 }
 
-var radios = document.getElementsByClassName("radio");
-for (var i = 0; i < checkboxes.length; i++) {
-  radios[i].addEventListener("change", radio);
-}
-
-function radio() {
+function update() {
   let selectedOption = document.querySelector('input[name="optionen"]:checked');
             
             if (selectedOption) {
                 let result = selectedOption.value;
 
-                if (result === "1") {
+                if (result === "") {
 document.getElementById('zusatzlabel').textContent = "111"
                 } else if (result === "2") {
 
                 } else if (result === "3") {
 
                 }
+                else if (result === "4") {
+                  
+                }
             } else {
-                document.getElementById("result").innerText = "Bitte wähle eine Option.";
+
             }
 }

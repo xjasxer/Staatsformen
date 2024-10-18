@@ -66,6 +66,8 @@ data-title="Diktatur"
 </label><br>
 </div>
 
+<input type="button" value="aktuallisieren" onclick="update()">
+
 </div>
 
 
