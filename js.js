@@ -74,15 +74,15 @@ function update() {
             if (selectedOption) {
                 let result = selectedOption.value;
 
-                if (result === "") {
-document.getElementById('zusatzlabel').textContent = "111"
+                if (result === "1") {
+document.getElementById('zusatzlabel').textContent = "Teilautonome Republik"
                 } else if (result === "2") {
-
+document.getElementById('zusatzlabel').textContent = "Islamische Republik"
                 } else if (result === "3") {
-
+document.getElementById('zusatzlabel').textContent = "Föderale Republik"
                 }
                 else if (result === "4") {
-                  
+document.getElementById('zusatzlabel').textContent = "Deutschland"
                 }
             } else {
 

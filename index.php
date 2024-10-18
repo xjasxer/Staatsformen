@@ -66,7 +66,7 @@ data-title="Diktatur"
 </label><br>
 </div>
 
-<input type="button" value="aktuallisieren" onclick="update()">
+<input type="button" value="aktuallisieren" onclick="update()" id="einstellungsbtn" class="button-19">
 
 </div>
 
@@ -79,13 +79,13 @@ data-title="Diktatur"
 <h4>Staatsformen:</h4>
 
 
-<input type="checkbox" id="mo" name="1" value="1" class="checkbox">   
+<input type="radio" id="mo" name="karte" value="1" class="checkbox">   
 <label for="1">Monarchie</label><br>
 
-<input type="checkbox" id="re" name="2" value="2" class="checkbox">
+<input type="radio" id="re" name="karte" value="2" class="checkbox">
   <label for="2">Republik (alle Formen)</label> <br>
   
-  <input type="checkbox" id="dik" name="3" value="3" class="checkbox">
+  <input type="radio" id="dik" name="karte" value="3" class="checkbox">
   <label for="3" id="zusatzlabel">Zusatz</label> <br>
 
  <h5 id="einstellungentext" onclick="einstellungenopen()">  Weitere Einstellungen </h5>
