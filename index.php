@@ -66,9 +66,9 @@ data-title="Diktatur"
 </label><br>
 </div>
 
-<input type="button" value="aktuallisieren" onclick="update()" id="einstellungsbtn" class="button-19">
+<input type="button" value="aktuallisieren" onclick="update(), einstellungenclose() ,checkbox()" id="einstellungsbtn" class="button-19">
 
-</div>
+</div>1
 
 
 <div id="nav-karte">
