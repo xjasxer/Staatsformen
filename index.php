@@ -14,34 +14,83 @@
 
 <input type="button" value="Monarchie"
  data-title="Monarchie"
- data-beschreibung="becshriebunf"
+ data-beschreibung="8u"
  data-beschreibung2="2222"
+ data-content="1"
  id="info1"
- onclick="info1()">
+ onclick="info1(), einstellungenclose()">
 
 <input type="button" value="Republik"
 data-title="Republik"
- data-beschreibung="hduhuehudheudh"
+ data-beschreibung="dww uhuh"
  data-beschreibung2="duhduhu"
  id="info2"
- onclick="info2()">
+ onclick="info2(), einstellungenclose()">
 
 <input type="button" value="Diktatur"
 data-title="Diktatur"
- data-beschreibung="sssss"
+ data-beschreibung="sssstts"
  data-beschreibung2="huhuhuhuhu"
  id="info3"
- onclick="info3()">
+ onclick="info3(), einstellungenclose()">
 
 </div>
+
+<!-- Informations Block  -->
 
 <div id="info">
  <img src="/src/icons/x.png" alt="Close" onclick="closeinfo()"> 
   <h1 class="center"  id="info-header">hh</h1>
+  <p class="center" id="info-header-btn"></p>
+
+<!-- Nav bar in Monarchie  -->
+ <form method="post" id="form-infonav" >
+    <input type="hidden" name="speichernavart" value="" id="speichernavart">
+    <input type="button" id="submitBtn" >
+</form>
+
+
+
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['speichernavart'])) {
+        $content = $_POST['speichernavart'];
+
+        if ($content === '1') {
+            echo '
+            <input type="button" value="1" 
+            data-title-btn="1"
+            data-beschreibung="1111"
+            data-beschreibung2="1ww1w1w1w"
+            onclick="checknavmonarchie()"
+            class="navmonarchiebtn">
+
+            <input type="button" value="2" 
+            data-title-btn="2"
+            data-beschreibung="2222"
+            data-beschreibung2="thzjkddsftgf"
+            onclick="checknavmonarchie()"
+            class="navmonarchiebtn">
+
+            <input type="button" value="3" 
+            data-title-btn="3"
+            data-beschreibung="333"
+            data-beschreibung2="fefwfrg"
+            onclick="checknavmonarchie()"
+            class="navmonarchiebtn">';
+        }
+    }
+}
+?>
+
+
+
   <p class="center" id="info-beschreibung">z</p>
   <p class="center" id="info-beschreibung2">z</p>
   <p id="copyright">icon:Flaticon.com</p>
 </div>
+
+<!-- Informations Block ENDE  -->
 
 <div id="einstellungen">
   <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose()">
@@ -66,9 +115,9 @@ data-title="Diktatur"
 </label><br>
 </div>
 
-<input type="button" value="aktuallisieren" onclick="update(), einstellungenclose() ,checkbox()" id="einstellungsbtn" class="button-19">
+<input type="button" value="aktuallisieren" onclick="update(), einstellungenclose() ,checkbox() " id="einstellungsbtn" class="button-19">
 
-</div>1
+</div>
 
 
 <div id="nav-karte">
@@ -88,7 +137,7 @@ data-title="Diktatur"
   <input type="radio" id="zusatzcb" name="karte" value="3" class="checkbox">
   <label for="3" id="zusatzlabel">Zusatz</label> <br>
 
- <h5 id="einstellungentext" onclick="einstellungenopen()">  Weitere Einstellungen </h5>
+ <h5 id="einstellungentext" onclick="einstellungenopen(), closeinfo() ">  Weitere Einstellungen </h5>
 
 
 

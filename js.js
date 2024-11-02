@@ -5,6 +5,7 @@ document.getElementById('info-header').textContent = button.getAttribute("data-t
 document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
 document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
 document.getElementById('info').style.display = "block";
+document.getElementById('speichernavart').value = "1"
   }
    
   function info2() {
@@ -14,6 +15,7 @@ document.getElementById('info').style.display = "block";
     document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
     document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
     document.getElementById('info').style.display = "block";
+    document.getElementById('speichernavart').value = "2"
       }
       function info3() {
         var button = document.getElementById('info3')
@@ -22,7 +24,29 @@ document.getElementById('info').style.display = "block";
         document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
         document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
         document.getElementById('info').style.display = "block";
+        document.getElementById('speichernavart').value = "1"
+   }
+
+          
+
+          function checknavmonarchie() {
+            var buttons = document.querySelectorAll('.navmonarchiebtn');
+
+            buttons.forEach(button => {
+              button.addEventListener('click', () => {
+                document.getElementById('info-header-btn').textContent = button.getAttribute("data-title-btn")
+                document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
+                document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
+                document.getElementById('info').style.display = "block";
+              });
+
+
+            });
           }
+
+
+
+
 
   function closeinfo() {
    document.getElementById('info').style.display = "none"
@@ -41,19 +65,10 @@ var b = document.getElementById('re');
 var c = document.getElementById('zusatzcb');
 var zusatz = document.querySelector('input[name="optionen"]:checked');
 
-if (zusatz) {
+  if (zusatz) {
   var value = zusatz.value;
-
-
-  if (c.checked && value === "1") {
-    document.body.style.color = "red";
-  } else {
-
-    document.body.style.color = "black";
-  }
-}  if (zusatz) {
-  var value = zusatz.value;
-
+  closeinfo()
+  einstellungenclose();
 
   if (c.checked && value === "1") {
     document.body.style.color = "red";
@@ -65,17 +80,22 @@ if (zusatz) {
 
 if (!a.checked && !b.checked) {
   document.body.style.backgroundImage = "url('/src/img/weltkarte_ipad.jpg')";
+  einstellungenclose();
+  closeinfo();
+  
   
 } else {
+  einstellungenclose();
+  closeinfo()
 if (a.checked) {
   document.body.style.backgroundImage = "url('/src/img/monarchie_ipad.png')";
+ 
 }
 if (b.checked) {
   document.body.style.backgroundImage = "url('/src/img/republik_ipad.png')";
 
 }
 if (a.checked && b.checked) {
-  document.body.style.backgroundImage = "url('/src/img/monarchie-republik_ipad.png')";
 
 }
 

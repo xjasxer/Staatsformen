@@ -176,7 +176,69 @@ body {
     float: right;
     margin-right: 10px; 
 }
+#nav-karte {
+    position: absolute;
+    width: 280px;
+    float: left;
+    left: 20px; 
+    top: 480px;
 
+    }
+    #nav-formen {
+        position: absolute;
+        left: 40px;
+        top: 90px;
+        font-size: 18px;
+    }
+
+#nav-infos {
+position: absolute;
+top: 740px;
+left: 700px;
+font-size: 20px;
+}
+#info {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+#info img {
+height: 35px;
+float: right;
+}
+#copyright { 
+top: 295px;
+position: absolute;
+left: 540px;
+font-size: 10px;
+}
+#einstellungen {
+width: 600px;
+    height: 300px;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+#einstellungen img {
+height: 35px;
+float: right;
+}
+#einstellungen h1 {
+margin-left: 45px
+}
+#einstellungen label {
+font-size: 18px;
+}
+#einstellungenradio {
+margin-top: 40px;
+margin-left: 200px;
+}
+#einstellungsbtn {
+margin-left: 211px;
+margin-top: 19px;
+}
 } 
 
 
