@@ -132,15 +132,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <label for="1">Monarchie</label><br>
 
 <input type="radio" id="re" name="karte" value="2" class="checkbox">
-  <label for="2">Republik (alle Formen)</label> <br>
+  <labeol for="2">Republik (alle Formen)</label> <br>
   
   <input type="radio" id="zusatzcb" name="karte" value="3" class="checkbox">
   <label for="3" id="zusatzlabel">Zusatz</label> <br>
-
+<div id="einstellungszusatzdiv">
  <h5 id="einstellungentext" onclick="einstellungenopen(), closeinfo() ">  Weitere Einstellungen </h5>
-
-
-
+ <img src="/src/icons/frage.png" alt="">
+</div>
+ 
 <script src="js.js"></script>
 </body>
 </html>

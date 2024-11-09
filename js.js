@@ -7,12 +7,12 @@ document.getElementById('info-beschreibung2').textContent = button.getAttribute(
 document.getElementById('info').style.display = "block";
 document.getElementById('speichernavart').value = "1"
   }
-   
+  
   function info2() {
     var button = document.getElementById('info2')
     
     document.getElementById('info-header').textContent = button.getAttribute("data-title")
-    document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
+    document.c('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
     document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
     document.getElementById('info').style.display = "block";
     document.getElementById('speichernavart').value = "2"
