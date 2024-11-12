@@ -5,17 +5,18 @@ document.getElementById('info-header').textContent = button.getAttribute("data-t
 document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
 document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
 document.getElementById('info').style.display = "block";
-document.getElementById('speichernavart').value = "1"
+document.getElementById('infonavmonarchie').style.display = "block";
   }
   
   function info2() {
     var button = document.getElementById('info2')
-    
+  
     document.getElementById('info-header').textContent = button.getAttribute("data-title")
-    document.c('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
+    document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
     document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
     document.getElementById('info').style.display = "block";
-    document.getElementById('speichernavart').value = "2"
+    document.getElementById('infonavmonarchie').style.display = "none";
+
       }
       function info3() {
         var button = document.getElementById('info3')
@@ -24,7 +25,7 @@ document.getElementById('speichernavart').value = "1"
         document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
         document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
         document.getElementById('info').style.display = "block";
-        document.getElementById('speichernavart').value = "1"
+        document.getElementById('infonavmonarchie').style.display = "none";
    }
 
           
@@ -50,6 +51,7 @@ document.getElementById('speichernavart').value = "1"
 
   function closeinfo() {
    document.getElementById('info').style.display = "none"
+   document.getElementById('infonavmonarchie').style.display = "none";
   }
 
 

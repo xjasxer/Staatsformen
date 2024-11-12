@@ -44,21 +44,10 @@ data-title="Diktatur"
   <p class="center" id="info-header-btn"></p>
 
 <!-- Nav bar in Monarchie  -->
- <form method="post" id="form-infonav" >
-    <input type="hidden" name="speichernavart" value="" id="speichernavart">
-    <input type="button" id="submitBtn" >
-</form>
 
 
-
-<?php 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['speichernavart'])) {
-        $content = $_POST['speichernavart'];
-
-        if ($content === '1') {
-            echo '
-            <input type="button" value="1" 
+<div id="infonavmonarchie" style="display:none;">
+<input type="button" value="1" 
             data-title-btn="1"
             data-beschreibung="1111"
             data-beschreibung2="1ww1w1w1w"
@@ -77,11 +66,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             data-beschreibung="333"
             data-beschreibung2="fefwfrg"
             onclick="checknavmonarchie()"
-            class="navmonarchiebtn">';
-        }
-    }
-}
-?>
+            class="navmonarchiebtn">
+
+</div>
 
 
 
@@ -138,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <label for="3" id="zusatzlabel">Zusatz</label> <br>
 <div id="einstellungszusatzdiv">
  <h5 id="einstellungentext" onclick="einstellungenopen(), closeinfo() ">  Weitere Einstellungen </h5>
- <img src="/src/icons/frage.png" alt="">
+
 </div>
  
 <script src="js.js"></script>

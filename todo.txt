@@ -1,0 +1,7 @@
+- frage img was ist "zusatz"
+- style für ipad und pc kontrollieren
+- optionen für verschiedene monarchie bei einstellungen einführen
+- such leiste einbringen 
+- php variable anlegen
+- help button einfügen
+- bei help kontakt möglichkeit jasper.dev.team@gmail.com
