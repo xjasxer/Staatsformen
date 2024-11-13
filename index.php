@@ -8,29 +8,32 @@
 </head>
 <body>
     
+
+
+
 <div id="nav-infos">
   
 <h4>Informationen über die Stattsformen</h4>
 
 <input type="button" value="Monarchie"
  data-title="Monarchie"
- data-beschreibung="8u"
- data-beschreibung2="2222"
+ data-beschreibung="Bitte wählen sie eine Staatsform aus von der sie Informationen erhalten möchten."
+ data-beschreibung2=""
  data-content="1"
  id="info1"
  onclick="info1(), einstellungenclose()">
 
 <input type="button" value="Republik"
 data-title="Republik"
- data-beschreibung="dww uhuh"
- data-beschreibung2="duhduhu"
+  data-beschreibung="Bitte wählen sie eine Staatsform aus von der sie Informationen erhalten möchten."
+ data-beschreibung2=""
  id="info2"
  onclick="info2(), einstellungenclose()">
 
 <input type="button" value="Diktatur"
 data-title="Diktatur"
- data-beschreibung="sssstts"
- data-beschreibung2="huhuhuhuhu"
+ data-beschreibung="ss"
+ data-beschreibung2="ss"
  id="info3"
  onclick="info3(), einstellungenclose()">
 
@@ -41,36 +44,52 @@ data-title="Diktatur"
 <div id="info">
  <img src="/src/icons/x.png" alt="Close" onclick="closeinfo()"> 
   <h1 class="center"  id="info-header">hh</h1>
-  <p class="center" id="info-header-btn"></p>
+
 
 <!-- Nav bar in Monarchie  -->
 
 
 <div id="infonavmonarchie" style="display:none;">
 <input type="button" value="1" 
-            data-title-btn="1"
+            data-title-btn="rgg"
             data-beschreibung="1111"
             data-beschreibung2="1ww1w1w1w"
-            onclick="checknavmonarchie()"
             class="navmonarchiebtn">
 
             <input type="button" value="2" 
             data-title-btn="2"
             data-beschreibung="2222"
             data-beschreibung2="thzjkddsftgf"
-            onclick="checknavmonarchie()"
             class="navmonarchiebtn">
 
             <input type="button" value="3" 
             data-title-btn="3"
             data-beschreibung="333"
             data-beschreibung2="fefwfrg"
-            onclick="checknavmonarchie()"
             class="navmonarchiebtn">
 
 </div>
+<div id="infonavrepublik" style="display:none;">
+<input type="button" value="Teilautonome Republik" 
+            data-title-btn="2222222222"
+            data-beschreibung="114356"
+            data-beschreibung2="hfghfgfgffhgf"
+            class="navrepublikbtn">
 
+            <input type="button" value="Islamische Republik" 
+            data-title-btn="g54gf"
+            data-beschreibung="trhhhhh"
+            data-beschreibung2="su 78635e"
+            class="navrepublikbtn">
 
+            <input type="button" value="Föderale Republik" 
+            data-title-btn="3"
+            data-beschreibung="333"
+            data-beschreibung2="fefwfrg"
+            class="navrepublikbtn">
+
+</div>
+<p class="center" id="info-header-btn"></p>
 
   <p class="center" id="info-beschreibung">z</p>
   <p class="center" id="info-beschreibung2">z</p>

@@ -6,6 +6,8 @@ document.getElementById('info-beschreibung').textContent = button.getAttribute("
 document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
 document.getElementById('info').style.display = "block";
 document.getElementById('infonavmonarchie').style.display = "block";
+document.getElementById('infonavrepublik').style.display = "none";
+document.getElementById('info-header-btn').textContent = ""
   }
   
   function info2() {
@@ -16,6 +18,8 @@ document.getElementById('infonavmonarchie').style.display = "block";
     document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
     document.getElementById('info').style.display = "block";
     document.getElementById('infonavmonarchie').style.display = "none";
+    document.getElementById('infonavrepublik').style.display = "block";
+    document.getElementById('info-header-btn').textContent = ""
 
       }
       function info3() {
@@ -26,25 +30,29 @@ document.getElementById('infonavmonarchie').style.display = "block";
         document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
         document.getElementById('info').style.display = "block";
         document.getElementById('infonavmonarchie').style.display = "none";
+        document.getElementById('infonavrepublik').style.display = "none";
+        document.getElementById('info-header-btn').textContent = ""
    }
 
           
 
-          function checknavmonarchie() {
-            var buttons = document.querySelectorAll('.navmonarchiebtn');
+   document.querySelectorAll('.navmonarchiebtn').forEach(button => {
+    button.addEventListener('click', () => {
+        document.getElementById('info-header-btn').textContent = button.getAttribute("data-title-btn");
+        document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung");
+        document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2");
+        document.getElementById('info').style.display = "block";
+    });
+});
 
-            buttons.forEach(button => {
-              button.addEventListener('click', () => {
-                document.getElementById('info-header-btn').textContent = button.getAttribute("data-title-btn")
-                document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
-                document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
-                document.getElementById('info').style.display = "block";
-              });
-
-
-            });
-          }
-
+document.querySelectorAll('.navrepublikbtn').forEach(button => {
+    button.addEventListener('click', () => {
+        document.getElementById('info-header-btn').textContent = button.getAttribute("data-title-btn");
+        document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung");
+        document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2");
+        document.getElementById('info').style.display = "block";
+    });
+});
 
 
 
@@ -52,6 +60,7 @@ document.getElementById('infonavmonarchie').style.display = "block";
   function closeinfo() {
    document.getElementById('info').style.display = "none"
    document.getElementById('infonavmonarchie').style.display = "none";
+   document.getElementById('infonavrepublik').style.display = "none";
   }
 
 
