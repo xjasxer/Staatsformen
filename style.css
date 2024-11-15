@@ -130,20 +130,7 @@ font-size: 14px;
     width: max-content;
   }
   
-  .button-19:after {
-    background-clip: padding-box;
-    background-color: #1CB0F6;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    bottom: -4px;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-  }
+
   
   .button-19,
   .button-19:focus {
@@ -163,6 +150,56 @@ font-size: 14px;
     border-width: 4px 0 0;
     background: none;
   }
+
+
+.navrepublikbtn {
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 5px 7px;
+    color: black;
+    font-weight:500;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-align: center; /* Zentrierung des Textes */
+    appearance: none; /* Entfernt Standard-Styling für Input */
+    overflow: hidden; /* Wichtig, um das Pseudo-Element nicht auslaufen zu lassen */
+  }
+.navrepublikbtn:focus {
+    background-color: cadetblue;
+    transition-duration: 760ms;
+}
+.navmonarchiebtn {
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 5px 7px;
+    color: black;
+    font-weight:500;
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-align: center; /* Zentrierung des Textes */
+    appearance: none; /* Entfernt Standard-Styling für Input */
+    overflow: hidden; /* Wichtig, um das Pseudo-Element nicht auslaufen zu lassen */
+  }
+.navmonarchiebtn:focus {
+    background-color: cadetblue;
+    transition-duration: 760ms;
+}
 
 
 /* PC */
@@ -240,10 +277,11 @@ margin-left: 211px;
 margin-top: 19px;
 }
 #infonavrepublik {
-justify-content: center;
-
+margin-left: 8%;
 }
-
+#infonavmonarchie {
+    margin-left: 18%;
+    }
 
 
 
@@ -327,6 +365,11 @@ margin-left: 200px;
 margin-left: 211px;
 margin-top: 19px;
  }
-
+ #infonavrepublik {
+    margin-left: 6%;
+    }
+    #infonavmonarchie {
+        margin-left: 18%;
+        }
 
 } 

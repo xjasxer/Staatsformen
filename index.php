@@ -50,40 +50,55 @@ data-title="Diktatur"
 
 
 <div id="infonavmonarchie" style="display:none;">
-<input type="button" value="1" 
-            data-title-btn="rgg"
+<input type="button" value="Monarchie" 
+tabindex="0"
+            data-title-btn="Monarchie"
             data-beschreibung="1111"
             data-beschreibung2="1ww1w1w1w"
             class="navmonarchiebtn">
 
-            <input type="button" value="2" 
-            data-title-btn="2"
+            <input type="button" value="Föderale Monarchie" 
+            tabindex="0"
+            data-title-btn="Föderale Monarchie"
             data-beschreibung="2222"
             data-beschreibung2="thzjkddsftgf"
             class="navmonarchiebtn">
 
-            <input type="button" value="3" 
-            data-title-btn="3"
+            <input type="button" value="Wahlmonarchie" 
+            tabindex="0"
+            data-title-btn="Wahlmonarchie"
             data-beschreibung="333"
             data-beschreibung2="fefwfrg"
             class="navmonarchiebtn">
 
 </div>
 <div id="infonavrepublik" style="display:none;">
-<input type="button" value="Teilautonome Republik" 
-            data-title-btn="2222222222"
+
+<input type="button" value="Republik"
+tabindex="0" 
+            data-title-btn="Republik"
+            data-beschreibung="333"
+            data-beschreibung2="fefwfrg"
+            class="navrepublikbtn">
+
+<input type="button" 
+tabindex="0"
+value="Teilautonome Republik" 
+            data-title-btn="Teilautonome Republik"
             data-beschreibung="114356"
             data-beschreibung2="hfghfgfgffhgf"
             class="navrepublikbtn">
 
             <input type="button" value="Islamische Republik" 
-            data-title-btn="g54gf"
+            tabindex="0"
+            data-title-btn="Islamische Republik"
             data-beschreibung="trhhhhh"
             data-beschreibung2="su 78635e"
             class="navrepublikbtn">
 
             <input type="button" value="Föderale Republik" 
-            data-title-btn="3"
+            tabindex="0"
+            data-title-btn="Föderale Republik"
             data-beschreibung="333"
             data-beschreibung2="fefwfrg"
             class="navrepublikbtn">
