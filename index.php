@@ -9,9 +9,48 @@
 <body>
     
 
+<div id="main-nav">
+<center>
+<h2 style="color:white;">Die Staatsformen</h2 >
+
+<table>
+<tr>
+<td><img src="src/icons/welt.png" alt="" class="nav-img"></td>
+<td><input type="button" value="Karteneinstellungen" class="nav-btn" onclick="einstellungenopen()" ></td>
+</tr>
 
 
-<div id="nav-infos">
+<tr>
+<td><img src="src/icons/search.png" alt=""class="nav-img"></td>
+<td><input type="button" value="Suchen"class="nav-btn"></td>
+</tr>
+
+</tr>
+<td><img src="src/icons/info.png" alt=""class="nav-img"></td>
+<td><input type="button" value="Informationen"class="nav-btn"></td>
+</tr>
+
+<tr>
+<td><img src="src/icons/customize.png" alt=""class="nav-img"></td>
+<td><input type="button" value="Personalisieren"class="nav-btn"></td>
+</tr>
+
+<tr>
+<td><img src="src/icons/help.png" alt=""class="nav-img"></td>
+<td><input type="button" value="Hilfe"class="nav-btn"></td>
+</tr>
+</center>
+
+
+
+</table>
+
+</div>
+
+
+
+
+<div id="nav-infos" style="display:none">
   
 <h4>Informationen über die Stattsformen</h4>
 
@@ -41,7 +80,7 @@ data-title="Diktatur"
 
 <!-- Informations Block  -->
 
-<div id="info">
+<div id="info" class="display">
  <img src="/src/icons/x.png" alt="Close" onclick="closeinfo()"> 
   <h1 class="center"  id="info-header">hh</h1>
 
@@ -113,7 +152,7 @@ value="Teilautonome Republik"
 
 <!-- Informations Block ENDE  -->
 
-<div id="einstellungen">
+<div id="einstellungen" class="display">
   <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose()">
 <h1 class="center" >Einstellungen</h1>
 <h3 class="center">Stellen sie hier ein was bei "Zusatz" angezeigt werden soll</h3>
@@ -141,7 +180,12 @@ value="Teilautonome Republik"
 </div>
 
 
-<div id="nav-karte">
+<div id="nav-karte"style="display:none">
+
+
+
+
+
 
 <h2>Karteneinstellungen</h2>
 
@@ -162,6 +206,8 @@ value="Teilautonome Republik"
 
 </div>
  
+
+
 <script src="js.js"></script>
 </body>
 </html>
