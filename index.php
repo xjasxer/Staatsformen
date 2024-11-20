@@ -9,6 +9,13 @@
 <body>
     
 
+
+
+
+
+
+
+
 <div id="main-nav">
 <center>
 <h2 style="color:white;">Die Staatsformen</h2 >
@@ -27,7 +34,7 @@
 
 </tr>
 <td><img src="src/icons/info.png" alt=""class="nav-img"></td>
-<td><input type="button" value="Informationen"class="nav-btn"></td>
+<td><input type="button" value="Informationen"class="nav-btn" onclick="info1open()"></td>
 </tr>
 
 <tr>
@@ -41,20 +48,16 @@
 </tr>
 </center>
 
-
-
 </table>
 
 </div>
 
-
-
-
-<div id="nav-infos" style="display:none">
-  
-<h4>Informationen über die Stattsformen</h4>
-
-<input type="button" value="Monarchie"
+  <div class="display" id="infos-1">
+  <img src="/src/icons/x.png" alt="close"onclick="closeinfo()">
+ <center><h2>Informationen über die Stattsformen</h2>
+ <h4>Wählen sie bitte eine Staatsform aus</h4></center>
+<center>
+<input type="button" value="Monarchie" class="infostyle"
  data-title="Monarchie"
  data-beschreibung="Bitte wählen sie eine Staatsform aus von der sie Informationen erhalten möchten."
  data-beschreibung2=""
@@ -62,21 +65,23 @@
  id="info1"
  onclick="info1(), einstellungenclose()">
 
-<input type="button" value="Republik"
+<input type="button" value="Republik" class="infostyle"
 data-title="Republik"
   data-beschreibung="Bitte wählen sie eine Staatsform aus von der sie Informationen erhalten möchten."
  data-beschreibung2=""
  id="info2"
  onclick="info2(), einstellungenclose()">
 
-<input type="button" value="Diktatur"
+<input type="button" value="Diktatur" class="infostyle"
 data-title="Diktatur"
  data-beschreibung="ss"
  data-beschreibung2="ss"
  id="info3"
  onclick="info3(), einstellungenclose()">
-
 </div>
+
+
+</center>
 
 <!-- Informations Block  -->
 
@@ -94,21 +99,21 @@ tabindex="0"
             data-title-btn="Monarchie"
             data-beschreibung="1111"
             data-beschreibung2="1ww1w1w1w"
-            class="navmonarchiebtn">
+            class="navmonarchiebtn infostyle">
 
             <input type="button" value="Föderale Monarchie" 
             tabindex="0"
             data-title-btn="Föderale Monarchie"
             data-beschreibung="2222"
             data-beschreibung2="thzjkddsftgf"
-            class="navmonarchiebtn">
+            class="navmonarchiebtn infostyle">
 
             <input type="button" value="Wahlmonarchie" 
             tabindex="0"
             data-title-btn="Wahlmonarchie"
             data-beschreibung="333"
             data-beschreibung2="fefwfrg"
-            class="navmonarchiebtn">
+            class="navmonarchiebtn infostyle">
 
 </div>
 <div id="infonavrepublik" style="display:none;">
@@ -118,7 +123,7 @@ tabindex="0"
             data-title-btn="Republik"
             data-beschreibung="333"
             data-beschreibung2="fefwfrg"
-            class="navrepublikbtn">
+            class="navrepublikbtn infostyle">
 
 <input type="button" 
 tabindex="0"
@@ -126,27 +131,28 @@ value="Teilautonome Republik"
             data-title-btn="Teilautonome Republik"
             data-beschreibung="114356"
             data-beschreibung2="hfghfgfgffhgf"
-            class="navrepublikbtn">
+            class="navrepublikbtn infostyle">
 
             <input type="button" value="Islamische Republik" 
             tabindex="0"
             data-title-btn="Islamische Republik"
             data-beschreibung="trhhhhh"
             data-beschreibung2="su 78635e"
-            class="navrepublikbtn">
+            class="navrepublikbtn infostyle">
 
             <input type="button" value="Föderale Republik" 
             tabindex="0"
             data-title-btn="Föderale Republik"
             data-beschreibung="333"
             data-beschreibung2="fefwfrg"
-            class="navrepublikbtn">
+            class="navrepublikbtn infostyle">
 
 </div>
 <p class="center" id="info-header-btn"></p>
 
   <p class="center" id="info-beschreibung">z</p>
   <p class="center" id="info-beschreibung2">z</p>
+  <input type="button" value="Zurück" onclick="in">
   <p id="copyright">icon:Flaticon.com</p>
 </div>
 
@@ -189,7 +195,7 @@ value="Teilautonome Republik"
 
 <h2>Karteneinstellungen</h2>
 
-<div id="nav-formen" >   
+<div id="nav-formen" style="display: block">   
 <h4>Staatsformen:</h4>
 
 

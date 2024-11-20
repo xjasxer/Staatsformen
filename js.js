@@ -54,13 +54,16 @@ document.querySelectorAll('.navrepublikbtn').forEach(button => {
     });
 });
 
-
+function info1open() {
+  document.getElementById('infos-1').style.display = "block";
+}
 
 
   function closeinfo() {
    document.getElementById('info').style.display = "none"
    document.getElementById('infonavmonarchie').style.display = "none";
    document.getElementById('infonavrepublik').style.display = "none";
+   document.getElementById('infos-1').style.display = "none";
   }
 
 
