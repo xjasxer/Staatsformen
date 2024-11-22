@@ -3,11 +3,12 @@
 }
 
 html {
+    cursor:default;
     width: 100%;
     overflow: hidden;
 }
 body {
-   
+
     background-color:  #ace1f3 ;
     background-repeat: no-repeat;
     width: 100%;
@@ -92,16 +93,16 @@ font-size: 14px;
 }
 .button-19 {
     appearance: button;
-    background-color: #1899D6;
+    background-color: #666666;
     border: solid transparent;
-    border-radius: 16px;
+    border-radius: 10px;
     border-width: 0 0 4px;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
     font-family: din-round,sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: .8px;
     line-height: 20px;
@@ -245,7 +246,7 @@ font-size: 20px;
 height: 35px;
 float: right;
 }
-#copyright { 
+.copyright { 
 top: 295px;
 position: absolute;
 left: 540px;
@@ -269,12 +270,38 @@ margin-left: 45px
 font-size: 18px;
 }
 #einstellungenradio {
-margin-top: 40px;
-margin-left: 200px;
+display: block;
 }
+#einstellungenradio h3 {
+   margin-left: 29px;
+}
+#monarchieradio {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+}
+#republikradio{
+    position: absolute;
+    left: 37%;
+    width: max-content;
+    height: max-content;
+}
+#monarchieradio h3 , #republikradio h3 {
+    margin-left: 70px;
+}
+}
+#sonstigeradio {
+    position: absolute;
+    left: 74%;
+    width: max-content;
+    height: max-content;
+}
+
 #einstellungsbtn {
-margin-left: 211px;
-margin-top: 19px;
+position: absolute;
+left: 40%;
+top: 89%;
+padding: 1px 7px;
 }
 #infonavrepublik {
 margin-left: 8%;
@@ -303,8 +330,12 @@ margin-left: 8%;
             height: 35px;
             float: right;
             }
-}
 
+#infozurück {
+    position: absolute;
+    left: 5%;
+    top: 85%;
+}
 
 /* IPad */
 @media screen and (max-width: 1640px) { 
@@ -344,7 +375,7 @@ font-size: 20px;
     height: 35px;
     float: right;
 }
-#copyright { 
+.copyright { 
     top: 295px;
     position: absolute;
     left: 540px;

@@ -9,13 +9,6 @@
 <body>
     
 
-
-
-
-
-
-
-
 <div id="main-nav">
 <center>
 <h2 style="color:white;">Die Staatsformen</h2 >
@@ -47,19 +40,17 @@
 <td><input type="button" value="Hilfe"class="nav-btn"></td>
 </tr>
 </center>
-
 </table>
-
 </div>
 
-  <div class="display" id="infos-1">
+<div class="display" id="infos-1">
   <img src="/src/icons/x.png" alt="close"onclick="closeinfo()">
  <center><h2>Informationen über die Stattsformen</h2>
  <h4>Wählen sie bitte eine Staatsform aus</h4></center>
 <center>
 <input type="button" value="Monarchie" class="infostyle"
  data-title="Monarchie"
- data-beschreibung="Bitte wählen sie eine Staatsform aus von der sie Informationen erhalten möchten."
+ data-beschreibung="Bitte wählen sie eine spezifische Form der Monarchie aus"
  data-beschreibung2=""
  data-content="1"
  id="info1"
@@ -67,7 +58,7 @@
 
 <input type="button" value="Republik" class="infostyle"
 data-title="Republik"
-  data-beschreibung="Bitte wählen sie eine Staatsform aus von der sie Informationen erhalten möchten."
+  data-beschreibung="Bitte wählen sie eine spezifische Form der Republik aus"
  data-beschreibung2=""
  id="info2"
  onclick="info2(), einstellungenclose() ">
@@ -78,20 +69,15 @@ data-title="Diktatur"
  data-beschreibung2="ss"
  id="info3"
  onclick="info3(), einstellungenclose() ">
+ <p class="copyright">icon:Flaticon.com</p>
 </div>
-
-
 </center>
 
-<!-- Informations Block  -->
+
 
 <div id="info" class="display">
  <img src="/src/icons/x.png" alt="Close" onclick="closeinfo()"> 
   <h1 class="center"  id="info-header">hh</h1>
-
-
-<!-- Nav bar in Monarchie  -->
-
 
 <div id="infonavmonarchie" style="display:none;">
 <input type="button" value="Monarchie" 
@@ -153,66 +139,50 @@ value="Teilautonome Republik"
   <p class="center" id="info-beschreibung">z</p>
   <p class="center" id="info-beschreibung2">z</p>
   <input type="button" value="Zurück" onclick="info1back()" class="button-19" id="infozurück">
-  <p id="copyright">icon:Flaticon.com</p>
+  <p class="copyright">icon:Flaticon.com</p>
 </div>
 
-<!-- Informations Block ENDE  -->
+
+
 
 <div id="einstellungen" class="display">
   <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose()">
-<h1 class="center" >Einstellungen</h1>
-<h3 class="center">Stellen sie hier ein was bei "Zusatz" angezeigt werden soll</h3>
+<h1 class="center" >Karteneinstellungen</h1>
+<h4 class="center">Stellen sie hier ein was Sie auf der Karte angezeigt bekommen haben möchten</h4>
 
 <div id="einstellungenradio">
-<label>
-    <input type="radio" name="optionen" value="1" id="radio" > Teilautonome Republik
-</label><br>
 
-<label>
-    <input type="radio" name="optionen" value="2" id="radio"> Islamische Republik
-</label><br>
 
-<label>
-    <input type="radio" name="optionen" value="3" id="radio"> 	Föderale Republik
-</label><br>
+<div id="monarchieradio">
+  <h3>Monarchie</h3>
+<label><input type="radio" name="optionen" value="1" id="radio" > Monarchie (alle Formen) </label><br>
+<label><input type="radio" name="optionen" value="2" id="radio"> Föderale Monarchie</label><br>
+<label><input type="radio" name="optionen" value="3" id="radio"> 	Wahlmonarchie</label><br>
+</div>
 
-<label>
-    <input type="radio" name="optionen" value="4" id="radio"> Deutschland
-</label><br>
+<div id="republikradio">
+<h3>Republik</h3>
+<label><input type="radio" name="optionen" value="100" id="radio"> Republik (alle Formen)</label><br>
+<label><input type="radio" name="optionen" value="101" id="radio"> Teilautonome Republik</label><br>
+<label><input type="radio" name="optionen" value="102" id="radio"> Islamische Republik</label><br>
+<label><input type="radio" name="optionen" value="103" id="radio"> Föderale Republik</label><br>
+</div>
+
+<div id="sonstigeradio">
+<h3>Sonstige</h3>
+<label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
+</div>
+
+
 </div>
 
 <input type="button" value="aktuallisieren" onclick="update(), einstellungenclose() ,checkbox() " id="einstellungsbtn" class="button-19">
 
 </div>
-
-
-<div id="nav-karte"style="display:none">
-
-
-
-
-
-
-<h2>Karteneinstellungen</h2>
-
-<div id="nav-formen" style="display: block">   
-<h4>Staatsformen:</h4>
-
-
-<input type="radio" id="mo" name="karte" value="1" class="checkbox">   
-<label for="1">Monarchie</label><br>
-
-<input type="radio" id="re" name="karte" value="2" class="checkbox">
-  <labeol for="2">Republik (alle Formen)</label> <br>
-  
-  <input type="radio" id="zusatzcb" name="karte" value="3" class="checkbox">
-  <label for="3" id="zusatzlabel">Zusatz</label> <br>
-<div id="einstellungszusatzdiv">
- <h5 id="einstellungentext" onclick="einstellungenopen(), closeinfo() ">  Weitere Einstellungen </h5>
-
-</div>
- 
-
 
 <script src="js.js"></script>
 </body>
