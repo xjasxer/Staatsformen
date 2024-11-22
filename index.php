@@ -63,21 +63,21 @@
  data-beschreibung2=""
  data-content="1"
  id="info1"
- onclick="info1(), einstellungenclose()">
+ onclick="info1(), einstellungenclose() ">
 
 <input type="button" value="Republik" class="infostyle"
 data-title="Republik"
   data-beschreibung="Bitte wählen sie eine Staatsform aus von der sie Informationen erhalten möchten."
  data-beschreibung2=""
  id="info2"
- onclick="info2(), einstellungenclose()">
+ onclick="info2(), einstellungenclose() ">
 
 <input type="button" value="Diktatur" class="infostyle"
 data-title="Diktatur"
  data-beschreibung="ss"
  data-beschreibung2="ss"
  id="info3"
- onclick="info3(), einstellungenclose()">
+ onclick="info3(), einstellungenclose() ">
 </div>
 
 
@@ -152,7 +152,7 @@ value="Teilautonome Republik"
 
   <p class="center" id="info-beschreibung">z</p>
   <p class="center" id="info-beschreibung2">z</p>
-  <input type="button" value="Zurück" onclick="in">
+  <input type="button" value="Zurück" onclick="info1back()" class="button-19" id="infozurück">
   <p id="copyright">icon:Flaticon.com</p>
 </div>
 

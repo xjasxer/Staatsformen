@@ -8,6 +8,7 @@ document.getElementById('info').style.display = "block";
 document.getElementById('infonavmonarchie').style.display = "block";
 document.getElementById('infonavrepublik').style.display = "none";
 document.getElementById('info-header-btn').textContent = ""
+document.getElementById('infos-1').style.display = "none";
   }
   
   function info2() {
@@ -20,6 +21,7 @@ document.getElementById('info-header-btn').textContent = ""
     document.getElementById('infonavmonarchie').style.display = "none";
     document.getElementById('infonavrepublik').style.display = "block";
     document.getElementById('info-header-btn').textContent = ""
+    document.getElementById('infos-1').style.display = "none";
 
       }
       function info3() {
@@ -32,6 +34,7 @@ document.getElementById('info-header-btn').textContent = ""
         document.getElementById('infonavmonarchie').style.display = "none";
         document.getElementById('infonavrepublik').style.display = "none";
         document.getElementById('info-header-btn').textContent = ""
+        document.getElementById('infos-1').style.display = "none";
    }
 
           
@@ -58,6 +61,10 @@ function info1open() {
   document.getElementById('infos-1').style.display = "block";
 }
 
+function info1back() {
+  document.getElementById('infos-1').style.display = "block";
+  document.getElementById('info').style.display = "none";
+}
 
   function closeinfo() {
    document.getElementById('info').style.display = "none"
