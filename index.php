@@ -8,6 +8,7 @@
 </head>
 <body>
     
+<div id="barrier"></div>
 
 <div id="main-nav">
 <center>
@@ -16,35 +17,35 @@
 <table>
 <tr>
 <td><img src="src/icons/welt.png" alt="" class="nav-img"></td>
-<td><input type="button" value="Karteneinstellungen" class="nav-btn" onclick="einstellungenopen()" ></td>
+<td><input type="button" value="Karteneinstellungen" class="nav-btn" onclick="einstellungenopen(), barrieron()" ></td>
 </tr>
 
 
 <tr>
 <td><img src="src/icons/search.png" alt=""class="nav-img"></td>
-<td><input type="button" value="Suchen"class="nav-btn"></td>
+<td><input type="button" value="Suchen"class="nav-btn" onclick="barrieron()"></td>
 </tr>
 
 </tr>
 <td><img src="src/icons/info.png" alt=""class="nav-img"></td>
-<td><input type="button" value="Informationen"class="nav-btn" onclick="info1open()"></td>
+<td><input type="button" value="Informationen"class="nav-btn" onclick="info1open(), barrieron()"></td>
 </tr>
 
 <tr>
 <td><img src="src/icons/customize.png" alt=""class="nav-img"></td>
-<td><input type="button" value="Personalisieren"class="nav-btn"></td>
+<td><input type="button" value="Personalisieren"class="nav-btn" onclick="barrieron()"></td>
 </tr>
 
 <tr>
 <td><img src="src/icons/help.png" alt=""class="nav-img"></td>
-<td><input type="button" value="Hilfe"class="nav-btn"></td>
+<td><input type="button" value="Hilfe"class="nav-btn" onclick="barrieron()"></td>
 </tr>
 </center>
 </table>
 </div>
 
 <div class="display" id="infos-1">
-  <img src="/src/icons/x.png" alt="close"onclick="closeinfo()">
+  <img src="/src/icons/x.png" alt="close"onclick="closeinfo() , barrieroff()">
  <center><h2>Informationen über die Stattsformen</h2>
  <h4>Wählen sie bitte eine Staatsform aus</h4></center>
 <center>
@@ -75,8 +76,9 @@ data-title="Diktatur"
 
 
 
-<div id="info" class="display">
- <img src="/src/icons/x.png" alt="Close" onclick="closeinfo()"> 
+
+<div id="info" class="display" >
+ <img src="/src/icons/x.png" alt="Close" onclick="closeinfo(), barrieroff()"> 
   <h1 class="center"  id="info-header">hh</h1>
 
 <div id="infonavmonarchie" style="display:none;">
@@ -146,7 +148,7 @@ value="Teilautonome Republik"
 
 
 <div id="einstellungen" class="display">
-  <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose()">
+  <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose() ,barrieroff()">
 <h1 class="center" >Karteneinstellungen</h1>
 <h4 class="center">Stellen sie hier ein was Sie auf der Karte angezeigt bekommen haben möchten</h4>
 
@@ -171,16 +173,22 @@ value="Teilautonome Republik"
 <div id="sonstigeradio">
 <h3>Sonstige</h3>
 <label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
-<label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
-<label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
-<label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
-<label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Nordamerika </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Südamerika </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Europa </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Afrika </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Asien </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Australien  </label><br>
+<label><input type="radio" name="optionen" value="200" id="radio"> Antarktis  </label><br>
+
+
+
 </div>
 
 
 </div>
 
-<input type="button" value="aktuallisieren" onclick="update(), einstellungenclose() ,checkbox() " id="einstellungsbtn" class="button-19">
+<input type="button" value="aktuallisieren" onclick="update(), einstellungenclose() ,checkbox() ,barrieroff()" id="einstellungsbtn" class="button-19">
 
 </div>
 

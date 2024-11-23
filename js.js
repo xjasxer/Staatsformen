@@ -56,6 +56,14 @@ document.querySelectorAll('.navrepublikbtn').forEach(button => {
     });
 });
 
+function barrieron() {
+  document.getElementById('barrier').style.display="block"
+}
+function barrieroff() {
+  document.getElementById('barrier').style.display="none"
+}
+
+
 function info1open() {
   document.getElementById('infos-1').style.display = "block";
 }
