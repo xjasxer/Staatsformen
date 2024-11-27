@@ -33,12 +33,12 @@
 
 <tr>
 <td><img src="src/icons/customize.png" alt=""class="nav-img"></td>
-<td><input type="button" value="Personalisieren"class="nav-btn" onclick="barrieron()"></td>
+<td><input type="button" value="Personalisieren"class="nav-btn" onclick="barrieron(), persoOpen()"></td>
 </tr>
 
 <tr>
 <td><img src="src/icons/help.png" alt=""class="nav-img"></td>
-<td><input type="button" value="Hilfe"class="nav-btn" onclick="barrieron()"></td>
+<td><input type="button" value="Hilfe"class="nav-btn" onclick="hilfeopen() , barrieron()"></td>
 </tr>
 </center>
 </table>
@@ -55,21 +55,21 @@
  data-beschreibung2=""
  data-content="1"
  id="info1"
- onclick="info1(), einstellungenclose() ">
+ onclick="info1(), displayClose()() ">
 
 <input type="button" value="Republik" class="infostyle"
 data-title="Republik"
   data-beschreibung="Bitte wählen sie eine spezifische Form der Republik aus"
  data-beschreibung2=""
  id="info2"
- onclick="info2(), einstellungenclose() ">
+ onclick="info2(), displayClose() ">
 
 <input type="button" value="Diktatur" class="infostyle"
 data-title="Diktatur"
  data-beschreibung="ss"
  data-beschreibung2="ss"
  id="info3"
- onclick="info3(), einstellungenclose() ">
+ onclick="info3(), displayClose() ">
  <p class="copyright">icon:Flaticon.com</p>
 </div>
 </center>
@@ -148,7 +148,7 @@ value="Teilautonome Republik"
 
 
 <div id="einstellungen" class="display">
-  <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose() ,barrieroff()">
+  <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose() , barrieroff()">
 <h1 class="center" >Karteneinstellungen</h1>
 <h4 class="center">Stellen sie hier ein was Sie auf der Karte angezeigt bekommen haben möchten</h4>
 
@@ -188,9 +188,31 @@ value="Teilautonome Republik"
 
 </div>
 
-<input type="button" value="aktuallisieren" onclick="update(), einstellungenclose() ,checkbox() ,barrieroff()" id="einstellungsbtn" class="button-19">
+<input type="button" value="aktuallisieren" onclick="update() ,checkbox() ,barrieroff()" id="einstellungsbtn" class="button-19">
 
 </div>
+
+
+<div class="display" style="display: none;" id="personalisieren">
+<img src="/src/icons/x.png" alt="close"onclick="persoclose() , barrieroff()">
+<h1 class="center" >Personalisieren</h1>
+<h4 class="center">Personalisieren Sie sich hier die Webseite nach ihren bedürfnissen</h4>
+
+</div>
+
+<div class="display" style="display: none;" id="hilfe">
+<img src="/src/icons/x.png" alt="close"onclick="hilfeclose() , barrieroff()">
+<h1 class="center" >Hilfe</h1>
+<h4 class="center">hohewhfewu</h4>
+</div>
+
+<div class="display" style="display: none;" id="suche">
+<img src="/src/icons/x.png" alt="close"onclick="sucheclose() , barrieroff()">
+<h1 class="center" >Hilfe</h1>
+<h4 class="center">hohewhfewu</h4>
+</div>
+
+
 
 <script src="js.js"></script>
 </body>

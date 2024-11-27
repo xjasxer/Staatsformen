@@ -26,6 +26,10 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(6px);
 }
+.display img {
+    height: 35px;
+    float: right;
+    }
 
 #nav-infos input {
 border-radius: 10px;
@@ -138,7 +142,7 @@ font-size: 14px;
          transition: all 0.1s ease-in-out;
  } 
  #barrier {
-    z-index: 4;
+    z-index: 3;
     background-color: rgba(136, 136, 136, 0.623);
     height: 100vw;
 position: absolute;
@@ -308,7 +312,20 @@ margin-left: 8%;
     left: 5%;
     top: 85%;
 }
-
+#personalisieren {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+#hilfe {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
 /* IPad */
 @media screen and (max-width: 1640px) { 
     body {

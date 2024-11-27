@@ -80,7 +80,25 @@ function info1back() {
    document.getElementById('infos-1').style.display = "none";
   }
 
-
+  function persoOpen() {
+    document.getElementById('personalisieren').style.display = "block";
+  }
+  function persoclose() {
+    document.getElementById('personalisieren').style.display = 'none'
+  }
+  function hilfeopen() {
+    document.getElementById('hilfe').style.display = "block";
+  }
+  function hilfeclose() {
+    document.getElementById('hilfe').style.display = 'none'
+  }
+  function sucheopen() {
+    document.getElementById('suche').style.display = "block";
+  }
+  function sucheclose() {
+    document.getElementById('suche').style.display = 'none'
+  }
+  
 var checkboxes = document.getElementsByClassName("checkbox");
 for (var i = 0; i < checkboxes.length; i++) {
   checkboxes[i].addEventListener("change", checkbox);
