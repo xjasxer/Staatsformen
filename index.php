@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+
 <div id="barrier"></div>
 
 <div id="main-nav">
@@ -23,7 +24,7 @@
 
 <tr>
 <td><img src="src/icons/search.png" alt=""class="nav-img"></td>
-<td><input type="button" value="Suchen"class="nav-btn" onclick="barrieron()"></td>
+<td><input type="button" value="Suchen"class="nav-btn" onclick="barrieron() , sucheopen()"></td>
 </tr>
 
 </tr>
@@ -208,8 +209,11 @@ value="Teilautonome Republik"
 
 <div class="display" style="display: none;" id="suche">
 <img src="/src/icons/x.png" alt="close"onclick="sucheclose() , barrieroff()">
-<h1 class="center" >Hilfe</h1>
-<h4 class="center">hohewhfewu</h4>
+<h1 class="center" >Suchen</h1>
+<h4 class="center">Suchen sie hier nach einem Land oder Filtern Sie nach einer Staatsformn</h4>
+<input type="search" name="suche" id="searchinput">
+<input type="button" value="Suchen" onclick="search()">
+<div id="result"></div>
 </div>
 
 

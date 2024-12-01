@@ -138,3 +138,42 @@ function update() {
 }
 
 }
+const laender = [
+  { name: 'Deutschland', form: 'xx', einwohner: 1000 },
+  { name: 'Frankreich', form: 'yy', einwohner: 700 },
+  { name: 'Italien', form: 'zz', einwohner: 600 }
+];
+
+document.getElementById('searchinput').addEventListener('keyup', function() {
+  search();
+});
+
+function search() {
+  const searchQuery = document.getElementById('searchinput').value.trim().toLowerCase();
+
+ 
+  if (searchQuery === '' || searchQuery.length < 2) {
+      document.getElementById('result').innerHTML = '';
+      return;
+  }
+
+  const searchWords = searchQuery.split(/\s+/);  
+
+  const filteredResults = laender.filter(item => {
+    return searchWords.every(word => {
+      return item.name.toLowerCase().includes(word) || item.form.toLowerCase().includes(word);
+    });
+  });
+
+  if (filteredResults.length > 0) {
+      let resultHTML = '<ul>';
+      filteredResults.forEach(item => {
+          resultHTML += `<li>${item.name} - ${item.form} - ${item.einwohner}</li>`;
+      });
+      resultHTML += '</ul>';
+      document.getElementById('result').innerHTML = resultHTML;
+  } else {
+      document.getElementById('result').innerHTML = `Keine Treffer für "${searchQuery}" gefunden`;
+  }
+}
+
