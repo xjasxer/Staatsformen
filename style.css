@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+
 }
 .display {
     z-index: 5;
@@ -153,7 +154,20 @@ left: 0;
     display: none;
 
  }
+#searchinput{
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
 
+#searchinput:focus {
+    border-color: #63d4bc;
+}
+
+#searchinput::placeholder {
+    color: #aaa;
+}
 /* PC */
 @media screen and (min-width: 1640px) { 
 body {
@@ -333,6 +347,46 @@ margin-left: 8%;
     left: 30%;
     top: 20%;
 }
+#result{
+  height: 140px;
+  width: calc(max-content + 300px);
+    position: absolute;
+    left: 14%;
+    overflow-x: hidden;
+overflow-y: hidden; }
+#result thead {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1; /* Hintergrundfarbe für besseren Kontrast */
+    z-index: 1;
+}
+#result::-webkit-scrollbar {
+    width: 5px; 
+    height: 3px; 
+    margin-left: 20px;
+  }
+  #result::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+  #result::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  #result::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+ #suche h1, #suche h4 {
+    position: relative;
+    left: 3%;
+}
+#searchinput{
+    padding: 3.5px;
+    font-size: 14px;
+    position: relative;
+    left: 35%;
+}
 /* IPad */
 @media screen and (max-width: 1640px) { 
     body {
@@ -480,5 +534,24 @@ top: 100px;
         position: absolute;
         left: 22%;
         top: 20%;
+}
+
+
+#result{
+    position: absolute;
+    left: 10%;
+    overflow-x: scroll;
+ }
+ #suche h1, #suche h4 {
+    position: relative;
+    left: 3%;
+}
+#suche input{
+    position: relative;
+    left: 30%;
+}
+#searchinput{
+    padding: 3.5px;
+    font-size: 14px;
 }
     }

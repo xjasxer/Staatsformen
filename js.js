@@ -139,9 +139,25 @@ function update() {
 
 }
 const laender = [
-  { name: 'Deutschland', form: 'xx', einwohner: 1000 },
-  { name: 'Frankreich', form: 'yy', einwohner: 700 },
-  { name: 'Italien', form: 'zz', einwohner: 600 }
+  { name: 'Abchasien', form: 'Republik', einwohner: "242.862 (2011)" },
+  { name: 'Afghanistan', form: 'Islamische Republik', einwohner: null },
+  { name: 'Ägypten', form: 'Republik', einwohner: null },
+  { name: 'Albanien', form: 'Republik', einwohner: null },
+  { name: 'Algerien', form: 'Republik', einwohner: null },
+  { name: 'Andorra', form: 'Monarchie (Fürstentum)', einwohner: null },
+  { name: 'Angola', form: 'Republik', einwohner: null },
+  { name: 'Antigua und Barbuda', form: 'Monarchie (Commonwealth Realm)', einwohner: null },
+  { name: 'Äquatorialguinea', form: 'Republik', einwohner: null },
+  { name: 'Argentinien', form: 'Föderale Republik', einwohner: null },
+  { name: 'Armenien', form: 'Republik', einwohner: null },
+  { name: 'Arzach/Bergkarabach', form: 'Republik', einwohner: null },
+  { name: 'Aserbaidschan', form: 'Republik', einwohner: null },
+  { name: 'Äthiopien', form: 'Föderale Republik', einwohner: null },
+  { name: 'Australien', form: 'Föderale Monarchie (Commonwealth Realm)', einwohner: null },
+  { name: 'Bahamas', form: 'Monarchie (Commonwealth Realm)', einwohner: null },
+  { name: 'Bahrain', form: 'Monarchie (Königreich)', einwohner: null },
+  { name: 'Bangladesch', form: 'Republik', einwohner: null },
+  { name: 'Barbados', form: 'Republik', einwohner: null }
 ];
 
 document.getElementById('searchinput').addEventListener('keyup', function() {
@@ -154,6 +170,7 @@ function search() {
  
   if (searchQuery === '' || searchQuery.length < 2) {
       document.getElementById('result').innerHTML = '';
+      document.getElementById('result').style.overflowY = "hidden";
       return;
   }
 
@@ -166,14 +183,37 @@ function search() {
   });
 
   if (filteredResults.length > 0) {
-      let resultHTML = '<ul>';
-      filteredResults.forEach(item => {
-          resultHTML += `<li>${item.name} - ${item.form} - ${item.einwohner}</li>`;
-      });
-      resultHTML += '</ul>';
-      document.getElementById('result').innerHTML = resultHTML;
-  } else {
-      document.getElementById('result').innerHTML = `Keine Treffer für "${searchQuery}" gefunden`;
-  }
-}
+    document.getElementById('result').style.overflowY = "scroll";
 
+    let resultHTML = `
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Form</th>
+                    <th>Einwohner</th>
+                </tr>
+            </thead>
+            <tbody>
+    `;
+
+    filteredResults.forEach(item => {
+        resultHTML += `
+            <tr>
+                <td>${item.name}</td>
+                <td>${item.form}</td>
+                <td>${item.einwohner}</td>
+            </tr>
+        `;
+    });
+    resultHTML += `
+            </tbody>
+        </table>
+    `;
+
+    document.getElementById('result').innerHTML = resultHTML;
+
+} else {
+    document.getElementById('result').innerHTML = `Keine Treffer für "${searchQuery}" gefunden`;
+}
+}

@@ -211,8 +211,7 @@ value="Teilautonome Republik"
 <img src="/src/icons/x.png" alt="close"onclick="sucheclose() , barrieroff()">
 <h1 class="center" >Suchen</h1>
 <h4 class="center">Suchen sie hier nach einem Land oder Filtern Sie nach einer Staatsformn</h4>
-<input type="search" name="suche" id="searchinput">
-<input type="button" value="Suchen" onclick="search()">
+<input type="search" name="suche" id="searchinput" placeholder="Deut...">
 <div id="result"></div>
 </div>
 
