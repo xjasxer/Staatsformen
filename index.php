@@ -43,7 +43,10 @@
 </tr>
 </center>
 </table>
+<p id="copyright-nav">icon:Flaticon.com</p>
 </div>
+
+<h5 id="impressum-txt" onclick="impressumopen()">Impressum</h5>
 
 <div class="display" id="infos-1">
   <img src="/src/icons/x.png" alt="close"onclick="closeinfo() , barrieroff()">
@@ -190,7 +193,7 @@ value="Teilautonome Republik"
 </div>
 
 <input type="button" value="aktuallisieren" onclick="update() ,checkbox() ,barrieroff()" id="einstellungsbtn" class="button-19">
-
+<p class="copyright">icon:Flaticon.com</p>
 </div>
 
 
@@ -198,13 +201,14 @@ value="Teilautonome Republik"
 <img src="/src/icons/x.png" alt="close"onclick="persoclose() , barrieroff()">
 <h1 class="center" >Personalisieren</h1>
 <h4 class="center">Personalisieren Sie sich hier die Webseite nach ihren bedürfnissen</h4>
-
+<p class="copyright">icon:Flaticon.com</p>
 </div>
 
 <div class="display" style="display: none;" id="hilfe">
 <img src="/src/icons/x.png" alt="close"onclick="hilfeclose() , barrieroff()">
 <h1 class="center" >Hilfe</h1>
-<h4 class="center">hohewhfewu</h4>
+<h4 class="center">Sie können mich bei jeder Art von Fragen/Problemen unter <a href="mailto:jasper.dev.team@gmail.com">jasper.dev.team@gmail.com</a>  erreichen </h4>
+<p class="copyright">icon:Flaticon.com</p>
 </div>
 
 <div class="display" style="display: none;" id="suche">
@@ -213,10 +217,35 @@ value="Teilautonome Republik"
 <h4 class="center">Suchen sie hier nach einem Land oder Filtern Sie nach einer Staatsformn</h4>
 <input type="search" name="suche" id="searchinput" placeholder="Deut...">
 <div id="result"></div>
+<p class="copyright">icon:Flaticon.com</p>
 </div>
 
+<div class="display" style="display: none;" id="impressum">
+<img src="/src/icons/x.png" alt="close"onclick="impressumclose() , barrieroff()">
+<div id="impressumdiv">
+<h2  >Impressum</h2>
+<h4 >Jasper Wirtz</h4>
+<h4 >Beckers Kämpchen 19</h4>
+<h4 >51371 Leverkusen</h4>
+<br>
+<h2  >Kontakt</h2>
+<h4  >Email: <a href="mailto:jasper.dev.team@gmail.com">jasper.dev.team@gmail.com</a></h4>
+</div>
+<div id="impressumsrc">
+<h2 >Quellen:</h2>
+<h4 >icons:<a target=”_blank” href="https://flaticon.com">Flaticon.com</a></h4>
+<h4 >Weltkarte: <a target=”_blank” href="https://malvorlagen-seite.de/weltkarte/">malvorlagen-seite.de</a></h4>
+<h4>Informationen Suche: <a target=”_blank” href="https://de.wikipedia.org/wiki/Liste_der_Regierungssysteme_nach_Staat">Wikipedia</a></h4>
+<h4>Informationen Infoseite: <a target=”_blank” href="https://de.wikipedia.org/wiki/Staatsform">Wikipedia</a></h4>
+</div>
+<p class="copyright">icon:Flaticon.com</p>
+</div>
 
 
 <script src="js.js"></script>
 </body>
 </html>
+
+
+
+

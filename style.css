@@ -181,6 +181,12 @@ body {
     height: 320px;
     width: 260px;
 }
+#copyright-nav {
+    float: right;
+    font-size: 8px;
+    color: white;
+    margin-right: 7px;
+}
 #main-nav table {
     position: relative;
     left: -10px;
@@ -326,21 +332,7 @@ margin-left: 8%;
     left: 5%;
     top: 85%;
 }
-#personalisieren {
-    width: 600px;
-    height: 300px;
-    position: absolute;
-    left: 30%;
-    top: 20%;
-}
-#hilfe {
-    width: 600px;
-    height: 300px;
-    position: absolute;
-    left: 30%;
-    top: 20%;
-}
-#suche {
+#personalisieren,#hilfe, #suche, #impressum {
     width: 600px;
     height: 300px;
     position: absolute;
@@ -353,11 +345,14 @@ margin-left: 8%;
     position: absolute;
     left: 14%;
     overflow-x: hidden;
-overflow-y: hidden; }
+overflow-y: hidden;
+margin-top: 12px; 
+margin-right: 20px;
+}
 #result thead {
     position: sticky;
     top: 0;
-    background-color: #f1f1f1; /* Hintergrundfarbe für besseren Kontrast */
+    background-color: #f1f1f1; 
     z-index: 1;
 }
 #result::-webkit-scrollbar {
@@ -386,6 +381,28 @@ overflow-y: hidden; }
     font-size: 14px;
     position: relative;
     left: 35%;
+}
+#impressum-txt {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    position: absolute;
+    top: 94%;
+    left: 93%;
+    font-size: 15px;
+}
+#impressumdiv{
+    float: left;
+    margin-left: 20px;
+}
+
+#impressumsrc{
+    float: right;
+}
+#impressumsrc a{
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: blue;
 }
 /* IPad */
 @media screen and (max-width: 1640px) { 

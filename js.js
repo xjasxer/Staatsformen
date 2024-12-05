@@ -98,6 +98,12 @@ function info1back() {
   function sucheclose() {
     document.getElementById('suche').style.display = 'none'
   }
+  function impressumopen() {
+    document.getElementById('impressum').style.display = "block";
+  }
+  function impressumclose() {
+    document.getElementById('impressum').style.display = 'none'
+  }
   
 var checkboxes = document.getElementsByClassName("checkbox");
 for (var i = 0; i < checkboxes.length; i++) {
@@ -215,5 +221,6 @@ function search() {
 
 } else {
     document.getElementById('result').innerHTML = `Keine Treffer für "${searchQuery}" gefunden`;
+    document.getElementById('result').style.overflowY = "hidden";
 }
 }
