@@ -1,73 +1,74 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de">   <!-- setzt die SPrache für z.B übersetzer auf Deutsch -->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- macht, dass umlaute angezeigt werden können -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Die Staatsformen</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Die Staatsformen</title> <!--  setzt den Titel der Webseite-->
+    <link rel="stylesheet" href="style.css"> <!--  verlinkt die CSS datei-->
 </head>
 <body>
 
 
-<div id="barrier"></div>
-
+<div id="barrier"></div> <!-- DIV für den Grauen hintergrund bei fenster offen -->
+ <!-- Nav leiste  -->
 <div id="main-nav">
 <center>
 <h2 style="color:white;">Die Staatsformen</h2 >
-
+<!-- Tabelle -->
 <table>
+  <!--  TR setzt eine neue zeile-->
 <tr>
-<td><img src="src/icons/welt.png" alt="" class="nav-img"></td>
-<td><input type="button" value="Karteneinstellungen" class="nav-btn" onclick="einstellungenopen(), barrieron()" ></td>
+  <!--  TD setzt eine neue Spalte-->
+<td><img src="src/icons/welt.png" alt="" class="nav-img"></td> <!-- class atribute wird genutzt um in css mehrer html objekte mit der gleichen klasse anzusprechen -->
+<td><input type="button" value="Karteneinstellungen" class="nav-btn" onclick="einstellungenopen(), barrieron()" ></td><!-- Value: angezeigter text; type: setzt den Input Type; Onclick:; ruft eine js funktion bei klick auf das Objekt auf;  -->
 </tr>
-
-
+<!-- Siehe kommentierung oben -->
 <tr>
 <td><img src="src/icons/search.png" alt=""class="nav-img"></td>
 <td><input type="button" value="Suchen"class="nav-btn" onclick="barrieron() , sucheopen()"></td>
 </tr>
-
+<!-- Siehe kommentierung oben -->
 </tr>
 <td><img src="src/icons/info.png" alt=""class="nav-img"></td>
 <td><input type="button" value="Informationen"class="nav-btn" onclick="info1open(), barrieron()"></td>
 </tr>
-
+<!-- Siehe kommentierung oben -->
 <tr>
 <td><img src="src/icons/customize.png" alt=""class="nav-img"></td>
 <td><input type="button" value="Personalisieren"class="nav-btn" onclick="barrieron(), persoOpen()"></td>
 </tr>
-
+<!-- Siehe kommentierung oben -->
 <tr>
 <td><img src="src/icons/help.png" alt=""class="nav-img"></td>
 <td><input type="button" value="Hilfe"class="nav-btn" onclick="hilfeopen() , barrieron()"></td>
 </tr>
 </center>
 </table>
-<p id="copyright-nav">icon:Flaticon.com</p>
+<p id="copyright-nav">icon:Flaticon.com</p> <!-- p setz einen normalen text -->
 </div>
-
-<h5 id="impressum-txt" onclick="impressumopen()">Impressum</h5>
-
+<h5 id="impressum-txt" onclick="impressumopen()">Impressum</h5> <!--mit id wird von css ein html objekt angesprochen; onclick ruft eine js funktion auf -->
+<!-- Startseite von der Infoseite -->
 <div class="display" id="infos-1">
-  <img src="/src/icons/x.png" alt="close"onclick="closeinfo() , barrieroff()">
- <center><h2>Informationen über die Stattsformen</h2>
- <h4>Wählen sie bitte eine Staatsform aus</h4></center>
+  <img src="/src/icons/x.png" alt="close"onclick="closeinfo() , barrieroff()"> <!-- ein bild bei click auf das object wird eine js funktion aufgerufen -->
+ <center><h2>Informationen über die Stattsformen</h2> <!--  überschrift tag-->
+ <h4>Wählen sie bitte eine Staatsform aus</h4></center> <!--  überschirft tag-->
 <center>
-<input type="button" value="Monarchie" class="infostyle"
- data-title="Monarchie"
- data-beschreibung="Bitte wählen sie eine spezifische Form der Monarchie aus"
- data-beschreibung2=""
- data-content="1"
- id="info1"
- onclick="info1(), displayClose()() ">
-
+<!-- button / siehe kommentierung oben-->
+<input type="button" value="Monarchie" class="infostyle"                        /* mit class kann ich in css es ansprechen */
+ data-title="Monarchie"                                                         /* ich speichere den wert auf data-title ; später durch js abrufbar */
+ data-beschreibung="Bitte wählen sie eine spezifische Form der Monarchie aus"   /* ich speichere den wert auf data-beschreibung ; später durch js abrufbar */
+ data-beschreibung2=""                                                          /* ich speichere den wert auf data-beschreibung2 ; später durch js abrufbar */
+ data-content="1"                                                               /* ich speichere den wert auf  data-contente ; später durch js abrufbar */
+ id="info1"                                                                      /* mit id spreche ich dieses elemnt in css an */
+ onclick="info1(), displayClose()() ">                                          <!-- mit onclick wird eine js funktion aufgerufen -->
+<!-- button / siehe kommentierung oben-->
 <input type="button" value="Republik" class="infostyle"
 data-title="Republik"
   data-beschreibung="Bitte wählen sie eine spezifische Form der Republik aus"
  data-beschreibung2=""
  id="info2"
  onclick="info2(), displayClose() ">
-
+<!-- button / siehe kommentierung oben-->
 <input type="button" value="Diktatur" class="infostyle"
 data-title="Diktatur"
  data-beschreibung="ss"
@@ -77,29 +78,27 @@ data-title="Diktatur"
  <p class="copyright">icon:Flaticon.com</p>
 </div>
 </center>
-
-
-
-
+<!-- 2. Seite von Infos -->
 <div id="info" class="display" >
- <img src="/src/icons/x.png" alt="Close" onclick="closeinfo(), barrieroff()"> 
+ <img src="/src/icons/x.png" alt="Close" onclick="closeinfo(), barrieroff()">  <!-- ein bild bei click auf das object wird eine js funktion aufgerufen -->
   <h1 class="center"  id="info-header">hh</h1>
-
-<div id="infonavmonarchie" style="display:none;">
-<input type="button" value="Monarchie" 
+<!-- button / siehe kommentierung oben-->
+                                        <!-- Button von Monarchie --> 
+<div id="infonavmonarchie" style="display:none;"> <!--  durch display:none standartmässig ausgeblendet-->
+<input type="button" value="Monarchie" S
 tabindex="0"
             data-title-btn="Monarchie"
             data-beschreibung="1111"
             data-beschreibung2="1ww1w1w1w"
             class="navmonarchiebtn infostyle">
-
+<!-- button / siehe kommentierung oben-->
             <input type="button" value="Föderale Monarchie" 
             tabindex="0"
             data-title-btn="Föderale Monarchie"
             data-beschreibung="2222"
             data-beschreibung2="thzjkddsftgf"
             class="navmonarchiebtn infostyle">
-
+<!-- button / siehe kommentierung oben-->
             <input type="button" value="Wahlmonarchie" 
             tabindex="0"
             data-title-btn="Wahlmonarchie"
@@ -108,15 +107,16 @@ tabindex="0"
             class="navmonarchiebtn infostyle">
 
 </div>
-<div id="infonavrepublik" style="display:none;">
-
+                                        <!-- Button von Republik --> 
+<div id="infonavrepublik" style="display:none;"> <!--  durch display:none standartmässig ausgeblendet-->
+<!-- button / siehe kommentierung oben-->
 <input type="button" value="Republik"
 tabindex="0" 
             data-title-btn="Republik"
             data-beschreibung="333"
             data-beschreibung2="fefwfrg"
             class="navrepublikbtn infostyle">
-
+<!-- button / siehe kommentierung oben-->
 <input type="button" 
 tabindex="0"
 value="Teilautonome Republik" 
@@ -124,14 +124,14 @@ value="Teilautonome Republik"
             data-beschreibung="114356"
             data-beschreibung2="hfghfgfgffhgf"
             class="navrepublikbtn infostyle">
-
+<!-- button / siehe kommentierung oben-->
             <input type="button" value="Islamische Republik" 
             tabindex="0"
             data-title-btn="Islamische Republik"
             data-beschreibung="trhhhhh"
             data-beschreibung2="su 78635e"
             class="navrepublikbtn infostyle">
-
+<!-- button / siehe kommentierung oben-->
             <input type="button" value="Föderale Republik" 
             tabindex="0"
             data-title-btn="Föderale Republik"
@@ -140,32 +140,30 @@ value="Teilautonome Republik"
             class="navrepublikbtn infostyle">
 
 </div>
+<!-- texte sind immer angezeigt  -->
 <p class="center" id="info-header-btn"></p>
 
   <p class="center" id="info-beschreibung">z</p>
   <p class="center" id="info-beschreibung2">z</p>
-  <input type="button" value="Zurück" onclick="info1back()" class="button-19" id="infozurück">
+  <input type="button" value="Zurück" onclick="info1back()" class="button-19" id="infozurück"> 
   <p class="copyright">icon:Flaticon.com</p>
 </div>
-
-
-
-
+<!-- Einstellungen Display -->
 <div id="einstellungen" class="display">
-  <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose() , barrieroff()">
+  <img src="/src/icons/x.png" alt="close"onclick="einstellungenclose() , barrieroff()">   <!-- ein bild bei click auf das object wird eine js funktion aufgerufen -->
 <h1 class="center" >Karteneinstellungen</h1>
 <h4 class="center">Stellen sie hier ein was Sie auf der Karte angezeigt bekommen haben möchten</h4>
-
+  <!-- Radio button-->
+    <!-- Radio Button sind felder zwischen allen kann nur eins ausgewählt werden -->
 <div id="einstellungenradio">
-
-
+  <!-- Radio Button Monarchie -->
 <div id="monarchieradio">
   <h3>Monarchie</h3>
-<label><input type="radio" name="optionen" value="1" id="radio" > Monarchie (alle Formen) </label><br>
+<label><input type="radio" name="optionen" value="1" id="radio" > Monarchie (alle Formen) </label><br>  
 <label><input type="radio" name="optionen" value="2" id="radio"> Föderale Monarchie</label><br>
 <label><input type="radio" name="optionen" value="3" id="radio"> 	Wahlmonarchie</label><br>
 </div>
-
+  <!-- Radio Button Republik -->
 <div id="republikradio">
 <h3>Republik</h3>
 <label><input type="radio" name="optionen" value="100" id="radio"> Republik (alle Formen)</label><br>
@@ -173,7 +171,7 @@ value="Teilautonome Republik"
 <label><input type="radio" name="optionen" value="102" id="radio"> Islamische Republik</label><br>
 <label><input type="radio" name="optionen" value="103" id="radio"> Föderale Republik</label><br>
 </div>
-
+  <!-- Radio Button Sonstige -->
 <div id="sonstigeradio">
 <h3>Sonstige</h3>
 <label><input type="radio" name="optionen" value="200" id="radio"> Deutschland </label><br>
@@ -184,33 +182,26 @@ value="Teilautonome Republik"
 <label><input type="radio" name="optionen" value="200" id="radio"> Asien </label><br>
 <label><input type="radio" name="optionen" value="200" id="radio"> Australien  </label><br>
 <label><input type="radio" name="optionen" value="200" id="radio"> Antarktis  </label><br>
-
-
-
 </div>
-
-
 </div>
-
 <input type="button" value="aktuallisieren" onclick="update() ,checkbox() ,barrieroff()" id="einstellungsbtn" class="button-19">
 <p class="copyright">icon:Flaticon.com</p>
 </div>
-
-
+<!-- Personalisier Seite-->
 <div class="display" style="display: none;" id="personalisieren">
 <img src="/src/icons/x.png" alt="close"onclick="persoclose() , barrieroff()">
 <h1 class="center" >Personalisieren</h1>
 <h4 class="center">Personalisieren Sie sich hier die Webseite nach ihren bedürfnissen</h4>
 <p class="copyright">icon:Flaticon.com</p>
 </div>
-
+<!-- Hilfe Seite-->
 <div class="display" style="display: none;" id="hilfe">
 <img src="/src/icons/x.png" alt="close"onclick="hilfeclose() , barrieroff()">
 <h1 class="center" >Hilfe</h1>
 <h4 class="center">Sie können mich bei jeder Art von Fragen/Problemen unter <a href="mailto:jasper.dev.team@gmail.com">jasper.dev.team@gmail.com</a>  erreichen </h4>
 <p class="copyright">icon:Flaticon.com</p>
 </div>
-
+<!-- Such Seite-->
 <div class="display" style="display: none;" id="suche">
 <img src="/src/icons/x.png" alt="close"onclick="sucheclose() , barrieroff()">
 <h1 class="center" >Suchen</h1>
@@ -219,7 +210,7 @@ value="Teilautonome Republik"
 <div id="result"></div>
 <p class="copyright">icon:Flaticon.com</p>
 </div>
-
+<!-- Impressum Seite-->
 <div class="display" style="display: none;" id="impressum">
 <img src="/src/icons/x.png" alt="close"onclick="impressumclose() , barrieroff()">
 <div id="impressumdiv">
@@ -229,23 +220,17 @@ value="Teilautonome Republik"
 <h4 >51371 Leverkusen</h4>
 <br>
 <h2  >Kontakt</h2>
-<h4  >Email: <a href="mailto:jasper.dev.team@gmail.com">jasper.dev.team@gmail.com</a></h4>
+<h4  >Email: <a href="mailto:jasper.dev.team@gmail.com">jasper.dev.team@gmail.com</a></h4> <!-- mailto: öffnet die Email mit dem Standart mail programm -->
 </div>
 <div id="impressumsrc">
 <h2 >Quellen:</h2>
-<h4 >icons:<a target=”_blank” href="https://flaticon.com">Flaticon.com</a></h4>
+<h4 >icons:<a target=”_blank” href="https://flaticon.com">Flaticon.com</a></h4> <!-- durch  _blank wird eine neue Seite erstellt -->
 <h4 >Weltkarte: <a target=”_blank” href="https://malvorlagen-seite.de/weltkarte/">malvorlagen-seite.de</a></h4>
 <h4>Informationen Suche: <a target=”_blank” href="https://de.wikipedia.org/wiki/Liste_der_Regierungssysteme_nach_Staat">Wikipedia</a></h4>
 <h4>Informationen Infoseite: <a target=”_blank” href="https://de.wikipedia.org/wiki/Staatsform">Wikipedia</a></h4>
 </div>
 <p class="copyright">icon:Flaticon.com</p>
 </div>
-
-
-<script src="js.js"></script>
+<script src="js.js"></script> <!-- verlinkt die JS -->
 </body>
 </html>
-
-
-
-
