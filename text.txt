@@ -10,3 +10,15 @@ AKtuell
 - such display erstellen
 -such leiste html/css
 -suchleiste js
+
+
+
+
+
+<input type="button" value="Monarchie" class="infostyle"                        /* mit class kann ich in css es ansprechen */
+ data-title="Monarchie"                                                         /* ich speichere den wert auf data-title ; später durch js abrufbar */
+ data-beschreibung="Bitte wählen sie eine spezifische Form der Monarchie aus"   /* ich speichere den wert auf data-beschreibung ; später durch js abrufbar */
+ data-beschreibung2=""                                                          /* ich speichere den wert auf data-beschreibung2 ; später durch js abrufbar */
+ data-content="1"                                                               /* ich speichere den wert auf  data-contente ; später durch js abrufbar */
+ id="info1"                                                                      /* mit id spreche ich dieses elemnt in css an */
+ onclick="info1(), displayClose()">    

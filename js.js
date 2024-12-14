@@ -1,52 +1,50 @@
+/* Funktion*/
   function info1() {
-var button = document.getElementById('info1')
-
-document.getElementById('info-header').textContent = button.getAttribute("data-title")
-document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
-document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
-document.getElementById('info').style.display = "block";
-document.getElementById('infonavmonarchie').style.display = "block";
-document.getElementById('infonavrepublik').style.display = "none";
-document.getElementById('info-header-btn').textContent = ""
-document.getElementById('infos-1').style.display = "none";
+var button = document.getElementById('info1'); /* setzt eine variable auf das object welche durch id gefundne wird */
+document.getElementById('info-header').textContent = button.getAttribute("data-title");  /*  Setzt den inhalt eines HTML objektes auf den Inhalt welcher vom Attribut eines HTML objects abgefragt wird */
+document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung"); /*  Setzt den inhalt eines HTML objektes auf den Inhalt welcher vom Attribut eines HTML objects abgefragt wird */
+document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2"); /*  Setzt den inhalt eines HTML objektes auf den Inhalt welcher vom Attribut eines HTML objects abgefragt wird */
+document.getElementById('info').style.display = "block"; /* setzt den Style eines Objectes welches mit id festgelegt wird auf sichtbar */
+document.getElementById('infonavmonarchie').style.display = "block";/* setzt den Style eines Objectes welches mit id festgelegt wird auf sichtbar */
+document.getElementById('infonavrepublik').style.display = "none";/* setzt den Style eines Objectes welches mit id festgelegt wird auf unsichtbar */
+document.getElementById('info-header-btn').textContent = "";   /* setzt den Inhalt eines HTML objectes auf nichts */
+document.getElementById('infos-1').style.display = "none"; /* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
   }
-  
+  /* Funktion / siehe Kommentierung oben*/
 function info2() {
     var button = document.getElementById('info2')
-  
-    document.getElementById('info-header').textContent = button.getAttribute("data-title")
-    document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
-    document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
+    document.getElementById('info-header').textContent = button.getAttribute("data-title");
+    document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung");
+    document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2");
     document.getElementById('info').style.display = "block";
     document.getElementById('infonavmonarchie').style.display = "none";
     document.getElementById('infonavrepublik').style.display = "block";
-    document.getElementById('info-header-btn').textContent = ""
+    document.getElementById('info-header-btn').textContent = "";
     document.getElementById('infos-1').style.display = "none";
-
       }
+  /* Funktion / siehe Kommentierung oben*/
 function info3() {
         var button = document.getElementById('info3')
-        
-        document.getElementById('info-header').textContent = button.getAttribute("data-title")
-        document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung")
-        document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2")
+        document.getElementById('info-header').textContent = button.getAttribute("data-title"); 
+        document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung");
+        document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2") ;
         document.getElementById('info').style.display = "block";
         document.getElementById('infonavmonarchie').style.display = "none";
         document.getElementById('infonavrepublik').style.display = "none";
-        document.getElementById('info-header-btn').textContent = ""
+        document.getElementById('info-header-btn').textContent = "";
         document.getElementById('infos-1').style.display = "none";
    }
-
-
+   /* Eventlistener auf alle Elemente mit der Klasse navmonarchiebtn */
    document.querySelectorAll('.navmonarchiebtn').forEach(button => {
     button.addEventListener('click', () => {
-        document.getElementById('info-header-btn').textContent = button.getAttribute("data-title-btn");
-        document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung");
-        document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2");
-        document.getElementById('info').style.display = "block";
+        document.getElementById('info-header-btn').textContent = button.getAttribute("data-title-btn");   /*  Setzt den inhalt eines HTML objektes auf den Inhalt welcher vom Attribut eines HTML objects abgefragt wird */
+        document.getElementById('info-beschreibung').textContent = button.getAttribute("data-beschreibung");   /*  Setzt den inhalt eines HTML objektes auf den Inhalt welcher vom Attribut eines HTML objects abgefragt wird */
+        document.getElementById('info-beschreibung2').textContent = button.getAttribute("data-beschreibung2");   /*  Setzt den inhalt eines HTML objektes auf den Inhalt welcher vom Attribut eines HTML objects abgefragt wird */
+        document.getElementById('info').style.display = "block";  /* setzt den Style eined Objectes welches mit id festgelegt wird auf sichtbar */
     });
 });
-
+   /* Eventlistener auf alle Elemente mit der Klasse navrepublikbtn */
+   /* siehe Kommentierung oben */
 document.querySelectorAll('.navrepublikbtn').forEach(button => {
     button.addEventListener('click', () => {
         document.getElementById('info-header-btn').textContent = button.getAttribute("data-title-btn");
@@ -55,56 +53,71 @@ document.querySelectorAll('.navrepublikbtn').forEach(button => {
         document.getElementById('info').style.display = "block";
     });
 });
-
+/* Funktion um den hintergund grau werden zu lassen */
 function barrieron() {
-  document.getElementById('barrier').style.display="block"
+  document.getElementById('barrier').style.display="block";  /* setzt den Style eined Objectes welches mit id festgelegt wird auf sichtbar */
 }
+/* Funktion um den hintergund normal werden zu lassen */
 function barrieroff() {
-  document.getElementById('barrier').style.display="none"
+  document.getElementById('barrier').style.display="none";  /* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
 }
-
-
+/* Funktion zum öffnen der Info Startseite  */
 function info1open() {
-  document.getElementById('infos-1').style.display = "block";
+  document.getElementById('infos-1').style.display = "block";/* setzt den Style eined Objectes welches mit id festgelegt wird auf sichtbar */
 }
-
+ /* Funktion zum zuück gehen auf die Info Startseite */
 function info1back() {
-  document.getElementById('infos-1').style.display = "block";
-  document.getElementById('info').style.display = "none";
+  document.getElementById('infos-1').style.display = "block";/* setzt den Style eined Objectes welches mit id festgelegt wird auf sichtbar */
+  document.getElementById('info').style.display = "none";/* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
 }
-
   function closeinfo() {
-   document.getElementById('info').style.display = "none"
-   document.getElementById('infonavmonarchie').style.display = "none";
-   document.getElementById('infonavrepublik').style.display = "none";
-   document.getElementById('infos-1').style.display = "none";
+   document.getElementById('info').style.display = "none"; /* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
+   document.getElementById('infonavmonarchie').style.display = "none";/* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
+   document.getElementById('infonavrepublik').style.display = "none";/* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
+   document.getElementById('infos-1').style.display = "none";/* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
+  }
+  /* Funktion zum öffnen der Seite Personalisieren */
+  function persoOpen() {
+    document.getElementById('personalisieren').style.display = "block"; /* setzt den Style eined Objectes welches mit id festgelegt wird auf sichtbar */
+  }
+  /* Funktion zum schliessen der Seite Personalisieren */
+  function persoclose() {
+    document.getElementById('personalisieren').style.display = 'none';/* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
+  }
+  /* Funktion zum öffnen der Hilfe Seite*/
+  function hilfeopen() {
+    document.getElementById('hilfe').style.display = "block";/* setzt den Style eined Objectes welches mit id festgelegt wird auf sichtbar */
+  }
+   /* Funktion zum schliessen der Seite Hilfe */
+  function hilfeclose() {
+    document.getElementById('hilfe').style.display = 'none'; /* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
+  }
+  /* Funktion zum öffnen der Such Seite */
+  function sucheopen() {
+    document.getElementById('suche').style.display = "block";/* setzt den Style eined Objectes welches mit id festgelegt wird auf sichtbar */
+  }
+   /* Funktion zum schliessen der Seite Suchen  */
+  function sucheclose() {
+    document.getElementById('suche').style.display = 'none';/* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
+  }
+  /* Funktion zum öffnen der Impressum Seite */
+  function impressumopen() {
+    document.getElementById('impressum').style.display = "block";/* setzt den Style eined Objectes welches mit id festgelegt wird auf sichtbar */
+  }
+   /* Funktion zum schliessen der Seite Impressum */
+  function impressumclose() {
+    document.getElementById('impressum').style.display = 'none';/* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
+  }
+  /* Funktion zum öffnen der Einstellungs Seite */
+  function einstellungenopen() {
+    document.getElementById('einstellungen').style.display = 'block';/* setzt den Style eined Objectes welches mit id festgelegt wird auf sichtbar */
+  }
+   /* Funktion zum schliessen der Seite Einstellungen */
+  function einstellungenclose() {
+    document.getElementById('einstellungen').style.display = 'none';/* setzt den Style eined Objectes welches mit id festgelegt wird auf unsichtbar */
   }
 
-  function persoOpen() {
-    document.getElementById('personalisieren').style.display = "block";
-  }
-  function persoclose() {
-    document.getElementById('personalisieren').style.display = 'none'
-  }
-  function hilfeopen() {
-    document.getElementById('hilfe').style.display = "block";
-  }
-  function hilfeclose() {
-    document.getElementById('hilfe').style.display = 'none'
-  }
-  function sucheopen() {
-    document.getElementById('suche').style.display = "block";
-  }
-  function sucheclose() {
-    document.getElementById('suche').style.display = 'none'
-  }
-  function impressumopen() {
-    document.getElementById('impressum').style.display = "block";
-  }
-  function impressumclose() {
-    document.getElementById('impressum').style.display = 'none'
-  }
-  
+
 var checkboxes = document.getElementsByClassName("checkbox");
 for (var i = 0; i < checkboxes.length; i++) {
   checkboxes[i].addEventListener("change", checkbox);
@@ -112,12 +125,7 @@ for (var i = 0; i < checkboxes.length; i++) {
 
   
 
-function einstellungenopen() {
-  document.getElementById('einstellungen').style.display = 'block'
-}
-function einstellungenclose() {
-  document.getElementById('einstellungen').style.display = 'none'
-}
+
 
 function update() {
   let selectedOption = document.querySelector('input[name="optionen"]:checked');
