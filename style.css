@@ -1,3 +1,57 @@
+/*
+- position / legt die Position fest 
+- top / bei position absolut kann man den abstand nach oben verändern
+- left / bei position absolut kann man den abstand nach links verändern
+- right / bei position absolut kann man den abstand nach rechts verändern
+- bottom / bei position absolut kann man den abstand nach unten verändern
+- z-index / Stellt die Ebenen ein -1 ist hinter allem
+- display / Anzeige einstellungen
+- overflow / Damit Stellt man ein was mit dem Content passiert welcher grösser als die angegebenen Width und Hight angaben sind
+- width / stellt die Breite ein
+- height / stellt die Höhe ein
+- padding / verändert die Grösse 
+- margin / stellt ein wie viel platz zu dem nächsten Objekt sein soll
+- float / Wo das Element sein soll (Links/Rechts)
+- transform translate / verändert Position
+- transform scale / verändert die Grösse
+- font-family / verändert die Schrift Art
+- font-size / verändert die Text grösse
+- font-weight / Veröndert die Text Dicke
+- letter-spacing / Verändert den Abstand zwischen den Buchstaben
+- text-align / Wo das ELement ausgerichtet werden soll
+- text-decoration / Stelt die Text Dekoration ein 
+- color / Text Farbe
+- background-color / Hintergrund Farbe
+- background-image / Hintergund Bild
+- background-size /Hintergund grösse
+- background-repeat / Stellt die Wiederhohlung des Hinetgrunds ein 
+- border-radius / Rundung der Umrandung
+- border-width / Dicke der Umrandung
+- border-color / Farbe der Umrandung
+- box-shadow 
+- backdrop-filter
+- -webkit-backdrop-filter
+- filter
+- -webkit-filter
+- transition
+- transition-duration
+- cursor
+- user-select
+- -webkit-user-select
+- touch-action
+- outline
+- ::placeholder
+- :hover
+- :focus
+- :disabled
+- :active
+- thead
+- ::-webkit-scrollbar
+- ::-webkit-scrollbar-track
+- ::-webkit-scrollbar-thumb
+- @media screen and (min-width: ...)
+- @media screen and (max-width: ...)
+ */
 .center {
     text-align: center;
 }
@@ -52,7 +106,6 @@ color: #0e35a0;
 font-size: 14px;
 }
 .button-19 {
-    appearance: button;
     background-color: #666666;
     border: solid transparent;
     border-radius: 10px;
@@ -64,7 +117,7 @@ font-size: 14px;
     font-family: din-round,sans-serif;
     font-size: 10px;
     font-weight: 700;
-    letter-spacing: .8px;
+    letter-spacing: 0.8px;
     line-height: 20px;
     margin: 0;
     outline: none;

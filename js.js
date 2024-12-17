@@ -148,9 +148,8 @@ function update() {
 
                 }
             } else {
-
 }
-
+   /* JS Variable */
 }
 const laender = [
   { name: 'Abchasien', form: 'Republik', einwohner: "242.862 (2011)" },
@@ -173,32 +172,31 @@ const laender = [
   { name: 'Bangladesch', form: 'Republik', einwohner: null },
   { name: 'Barbados', form: 'Republik', einwohner: null }
 ];
-
+   /*  Eventlistener auf Tastatur im Such Feld*/
 document.getElementById('searchinput').addEventListener('keyup', function() {
   search();
 });
-
+   /* Funktion */
 function search() {
-  const searchQuery = document.getElementById('searchinput').value.trim().toLowerCase();
-
- 
+  const searchQuery = document.getElementById('searchinput').value.trim().toLowerCase();   /* setzt das Geschriebene auf kleinbuchstaben */
+  /* if abfrage / wenn nichts dort steht oder das Wort weniger als 2 Buchstaben hat */
   if (searchQuery === '' || searchQuery.length < 2) {
-      document.getElementById('result').innerHTML = '';
-      document.getElementById('result').style.overflowY = "hidden";
+      document.getElementById('result').innerHTML = '';   /* setzt den DIV Content der Ergebnisse auf nichts  */
+      document.getElementById('result').style.overflowY = "hidden";   /*  versteckt die Scroll bar */
       return;
   }
 
-  const searchWords = searchQuery.split(/\s+/);  
+  const searchWords = searchQuery.split(/\s+/);    /* spaltet die eingabe in einzelnde Wörter */
 
-  const filteredResults = laender.filter(item => {
+  const filteredResults = laender.filter(item => { 
     return searchWords.every(word => {
       return item.name.toLowerCase().includes(word) || item.form.toLowerCase().includes(word);
     });
-  });
+  });   /* überprüft ob das Wort in der Variable mit Namen oder der Form übereinstimmt und speichert das Ertgebnis in einer Variable */
 
-  if (filteredResults.length > 0) {
-    document.getElementById('result').style.overflowY = "scroll";
-
+  if (filteredResults.length > 0) {   /* Sobald das Ergebnis mehr als 0 Buchtsaben hat folgt dieser Code */
+    document.getElementById('result').style.overflowY = "scroll";   /* Scroll Bar wird Sichtbar */
+  /*  Folgender Code wird in einer Variable gespeichert*/
     let resultHTML = `
         <table border="1" style="width: 100%; border-collapse: collapse;">
             <thead>
@@ -210,7 +208,7 @@ function search() {
             </thead>
             <tbody>
     `;
-
+  /* Für jedes gefundenes Element wird dieser Code wiederhohlt */
     filteredResults.forEach(item => {
         resultHTML += `
             <tr>
@@ -225,10 +223,11 @@ function search() {
         </table>
     `;
 
-    document.getElementById('result').innerHTML = resultHTML;
+    document.getElementById('result').innerHTML = resultHTML;   /* setzt den obrigen Code als HTML Code in den DIV */
 
 } else {
-    document.getElementById('result').innerHTML = `Keine Treffer für "${searchQuery}" gefunden`;
-    document.getElementById('result').style.overflowY = "hidden";
+    /*  Sonst */
+    document.getElementById('result').innerHTML = `Keine Treffer für "${searchQuery}" gefunden`;   /* Text wird in Div eingesetzt */ 
+    document.getElementById('result').style.overflowY = "hidden";   /* versteckt die Scroll Bar */
 }
 }
