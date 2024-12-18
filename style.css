@@ -28,29 +28,22 @@
 - border-radius / Rundung der Umrandung
 - border-width / Dicke der Umrandung
 - border-color / Farbe der Umrandung
-- box-shadow 
-- backdrop-filter
-- -webkit-backdrop-filter
-- filter
-- -webkit-filter
-- transition
-- transition-duration
-- cursor
-- user-select
-- -webkit-user-select
-- touch-action
-- outline
-- ::placeholder
-- :hover
-- :focus
-- :disabled
-- :active
-- thead
-- ::-webkit-scrollbar
-- ::-webkit-scrollbar-track
-- ::-webkit-scrollbar-thumb
-- @media screen and (min-width: ...)
-- @media screen and (max-width: ...)
+- backdrop-filter / zum anpassen wie schärfe
+- transition / flüssigen übergang zu bekommen
+- transition-duration / dauer des überganges
+- cursor / maus courser ändern
+- user-select / ob text markiert werden kann
+- touch-action / steuert die gesten die benutzt werden können
+- ::placeholder / text welcher als beispiel steht
+
+Benutz um bei dem status einen style festulegen
+- :hover / wenn das elemnt mit dem mauszeiger berührt wird
+- :focus / wenn ein elemnt angeklickt wird bzw gedrückt
+- :disabled / alle elemnte ohne inetraction
+- :active / element mit dem gerade interagiert wird
+
+ @media screen and (max-width: ...) / damit wird nur bei bestimmter bildschrim grösse der darin folgende css code verwendet
+
  */
 .center {
     text-align: center;
