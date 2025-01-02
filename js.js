@@ -231,3 +231,14 @@ function search() {
     document.getElementById('result').style.overflowY = "hidden";   /* versteckt die Scroll Bar */
 }
 }
+var checkbox1 = document.getElementById('pers1')
+checkbox1.addEventListener('change', () => {
+  if (checkbox1.checked) {
+  document.cookie = "pers1=true; max-age=604800; path=/"
+  } else {
+      document.cookie = "pers1=false; max-age=604800; path=/"
+  }
+});
+document.addEventListener('DOMContentLoaded', () => {
+
+});
